@@ -1,0 +1,9 @@
+returncode=0
+runtime_s=22.090579
+--- stdout ---
+screen_0030 completed 21.05s
+status
+completed    1
+results\logs\lbv_map_case_workspace\MEI_2019\screen_0030_result.csv
+
+--- stderr ---

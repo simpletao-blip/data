@@ -1,0 +1,9 @@
+mechanism_id,min_temperature_K,max_temperature_K,source
+POLIMI_2023,300,3000,Cantera phase intersection
+Konnov_2026,300,3000,Cantera phase intersection
+MEI_2019,300,3000,Cantera phase intersection
+C3_v3_5_C0,300,3000,Cantera phase intersection
+Otomo_2018,300,3000,Cantera phase intersection
+NUIG_2024,300,3000,Cantera phase intersection
+MEI_2021,300,3000,Cantera phase intersection
+RMG_2026_Burke,298,2500,Cantera phase intersection

@@ -1,0 +1,8 @@
+mechanism_id,species_count,reaction_count,status,warning_count,duplicate_equation_count
+POLIMI_2023,31.0,203.0,passed,0,9.0
+C3_v3_5_C0,32.0,233.0,passed,0,13.0
+MEI_2019,38.0,265.0,passed,0,11.0
+NUIGMech1.1_HT,923.0,5966.0,passed_with_warnings,4,66.0
+Konnov_2026,44.0,437.0,passed_with_warnings,3,21.0
+Shrestha_2018,124.0,1081.0,passed_with_warnings,1,30.0
+RMG_2026_Burke,53.0,733.0,passed_with_warnings,1,27.0

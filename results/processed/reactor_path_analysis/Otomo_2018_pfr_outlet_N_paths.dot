@@ -1,0 +1,43 @@
+digraph reaction_paths {
+center=1;
+s10 -> s11[fontname="Helvetica", penwidth=2.35, arrowsize=1.17, color="0.7, 0.515, 0.9"
+, label=" 0.0149"];
+s17 -> s10[fontname="Helvetica", penwidth=2.71, arrowsize=1.35, color="0.7, 0.523, 0.9"
+, label=" 0.0225"];
+s17 -> s11[fontname="Helvetica", penwidth=4.5, arrowsize=2.25, color="0.7, 0.679, 0.9"
+, label=" 0.179"];
+s12 -> s11[fontname="Helvetica", penwidth=2.9, arrowsize=1.45, color="0.7, 0.528, 0.9"
+, label=" 0.028"];
+s11 -> s31[fontname="Helvetica", penwidth=2.61, arrowsize=1.3, color="0.7, 0.52, 0.9"
+, label=" 0.0201"];
+s0 -> s11[fontname="Helvetica", penwidth=3.08, arrowsize=1.54, color="0.7, 0.535, 0.9"
+, label=" 0.0347"];
+s11 -> s24[fontname="Helvetica", penwidth=4.73, arrowsize=2.36, color="0.7, 0.731, 0.9"
+, label=" 0.231"];
+s0 -> s17[fontname="Helvetica", penwidth=4.61, arrowsize=2.31, color="0.7, 0.703, 0.9"
+, label=" 0.203"];
+s12 -> s31[fontname="Helvetica", penwidth=5.97, arrowsize=2.99, color="0.7, 1.47, 0.9"
+, label=" 0.97"];
+s0 -> s12[fontname="Helvetica", penwidth=6, arrowsize=3, color="0.7, 1.5, 0.9"
+, label=" 0.998"];
+s0 -> s31[fontname="Helvetica", penwidth=6, arrowsize=3, color="0.7, 1.5, 0.9"
+, label=" 1"];
+s13 -> s31[fontname="Helvetica", penwidth=2.8, arrowsize=1.4, color="0.7, 0.525, 0.9"
+, label=" 0.0251"];
+s24 -> s31[fontname="Helvetica", penwidth=5.36, arrowsize=2.68, color="0.7, 0.979, 0.9"
+, label=" 0.479"];
+s0 -> s13[fontname="Helvetica", penwidth=2.1, arrowsize=1.05, color="0.7, 0.511, 0.9"
+, label=" 0.0113"];
+s0 -> s24[fontname="Helvetica", penwidth=4.79, arrowsize=2.4, color="0.7, 0.749, 0.9"
+, label=" 0.249"];
+s0 [ fontname="Helvetica", label="NO"];
+s10 [ fontname="Helvetica", label="NH2"];
+s11 [ fontname="Helvetica", label="NH"];
+s12 [ fontname="Helvetica", label="N"];
+s13 [ fontname="Helvetica", label="NNH"];
+s17 [ fontname="Helvetica", label="HNO"];
+s24 [ fontname="Helvetica", label="N2O"];
+s31 [ fontname="Helvetica", label="N2"];
+ label = "Scale = 0.0019\l Otomo_2018: pfr_outlet nitrogen paths";
+ fontname = "Helvetica";
+}

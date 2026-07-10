@@ -1,0 +1,2 @@
+design_id,dataset_id,campaign_id,doi,mechanism_id,experimental_m_per_s,temperature_K,pressure_Pa,equivalence_ratio,cracking_ratio,apparatus,status,simulated_m_per_s,relative_error,converged,failure_reason,grid_points,transport_model,soret_enabled,runtime_s
+lbv_0067,x20100022:gdg1:p19:laminar burning velocity,campaign_bc661b9f179a,10.1016/j.combustflame.2019.05.003,NUIG_2024,0.147,298.0,101325.0,1.6,0.3076912658506441,heat flux burner; premixed,completed,0.1837869399877652,0.25025129243377703,True,,171,multicomponent,True,5.100392800000009

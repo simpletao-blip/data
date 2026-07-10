@@ -1,0 +1,2 @@
+design_id,dataset_id,campaign_id,doi,mechanism_id,experimental_m_per_s,temperature_K,pressure_Pa,equivalence_ratio,cracking_ratio,apparatus,status,simulated_m_per_s,relative_error,converged,failure_reason,grid_points,transport_model,soret_enabled,runtime_s
+lbv_0041,x20199050:gdg1:p2:laminar burning velocity,campaign_a1e35abfc26f,10.1299/transjsme.14-00423,MEI_2021,0.217,298.0,101325.0,0.95,0.0,flame cone method; slot burner,completed,0.14879657209053715,0.31430151110351545,True,,177,multicomponent,True,11.48253879999993

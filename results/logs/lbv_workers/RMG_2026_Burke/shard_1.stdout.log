@@ -1,0 +1,21 @@
+lbv_0026 completed 147.47s
+lbv_0032 completed 78.94s
+lbv_0038 failed 600.04s
+lbv_0041 completed 277.06s
+lbv_0044 completed 104.93s
+lbv_0047 completed 117.94s
+lbv_0050 completed 69.90s
+lbv_0053 completed 81.79s
+lbv_0056 completed 53.20s
+lbv_0059 completed 53.44s
+lbv_0062 completed 126.44s
+lbv_0065 completed 20.26s
+lbv_0068 completed 106.00s
+lbv_0071 completed 14.55s
+lbv_0074 completed 48.62s
+lbv_0077 completed 320.49s
+lbv_0080 failed 284.38s
+status
+completed    25
+failed        2
+results\raw\lbv_worker_shards\RMG_2026_Burke\shard_1.csv

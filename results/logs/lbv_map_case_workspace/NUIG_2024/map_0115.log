@@ -1,0 +1,9 @@
+returncode=0
+runtime_s=21.393149
+--- stdout ---
+map_0115 completed 20.06s
+status
+completed    1
+results\logs\lbv_map_case_workspace\NUIG_2024\map_0115_result.csv
+
+--- stderr ---

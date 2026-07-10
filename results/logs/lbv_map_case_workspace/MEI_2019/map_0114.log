@@ -1,0 +1,9 @@
+returncode=0
+runtime_s=7.568570
+--- stdout ---
+map_0114 completed 6.45s
+status
+completed    1
+results\logs\lbv_map_case_workspace\MEI_2019\map_0114_result.csv
+
+--- stderr ---

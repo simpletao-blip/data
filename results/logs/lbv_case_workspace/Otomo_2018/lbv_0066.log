@@ -1,0 +1,9 @@
+returncode=0
+runtime_s=5.486838
+--- stdout ---
+lbv_0066 ok 4.37s
+status
+completed    1
+results\logs\lbv_case_workspace\Otomo_2018\lbv_0066_result.csv
+
+--- stderr ---

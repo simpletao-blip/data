@@ -1,0 +1,15 @@
+design_id,design_role,inside_experimental_convex_hull,mechanism_id,temperature_K,pressure_bar,equivalence_ratio,cracking_ratio,status,laminar_burning_velocity_m_per_s,max_temperature_K,grid_points,transport_model,soret_enabled,failure_reason,runtime_s,source_design_id
+screen_0039,direct_pareto_confirmation_reused,True,POLIMI_2023,300,5,1.0,0.5,completed,0.2925563176070526,2158.0253204498363,204,multicomponent,True,,10.21766629999911,map_0126
+screen_0046,direct_pareto_confirmation_reused,True,POLIMI_2023,300,5,1.1,0.4,completed,0.2382478299261979,2107.2472528217727,192,multicomponent,True,,5.312316999999894,map_0030
+screen_0039,direct_pareto_confirmation_reused,True,Konnov_2026,300,5,1.0,0.5,completed,0.2106102855963985,2159.988594033196,207,multicomponent,True,,50.035004299999855,map_0126
+screen_0046,direct_pareto_confirmation_reused,True,Konnov_2026,300,5,1.1,0.4,completed,0.1639824697103432,2117.0418299669086,197,multicomponent,True,,24.45448600000236,map_0030
+screen_0039,direct_pareto_confirmation_reused,True,MEI_2019,300,5,1.0,0.5,completed,0.2624550344244141,2154.7325592509856,209,multicomponent,True,,13.540033100000072,map_0126
+screen_0046,direct_pareto_confirmation_reused,True,MEI_2019,300,5,1.1,0.4,completed,0.2012197935178195,2111.8347554276443,196,multicomponent,True,,11.574803400000746,map_0030
+screen_0039,direct_pareto_confirmation_reused,True,C3_v3_5_C0,300,5,1.0,0.5,completed,0.2384025793623756,2157.006057122532,208,multicomponent,True,,28.016956299999947,map_0126
+screen_0046,direct_pareto_confirmation_reused,True,C3_v3_5_C0,300,5,1.1,0.4,completed,0.1920105368006129,2107.1474890027093,197,multicomponent,True,,21.545780899999954,map_0030
+screen_0039,direct_pareto_confirmation_reused,True,Otomo_2018,300,5,1.0,0.5,completed,0.2463973605121019,2163.3970521237284,220,multicomponent,True,,21.551223599999503,map_0126
+screen_0046,direct_pareto_confirmation_reused,True,Otomo_2018,300,5,1.1,0.4,completed,0.184002123781879,2116.216248941126,186,multicomponent,True,,6.303805500001545,map_0030
+screen_0039,direct_pareto_confirmation_reused,True,NUIG_2024,300,5,1.0,0.5,completed,0.2525797103775467,2158.582123781572,201,multicomponent,True,,40.80015640000056,map_0126
+screen_0046,direct_pareto_confirmation_reused,True,NUIG_2024,300,5,1.1,0.4,completed,0.2100626279464517,2109.205264584198,204,multicomponent,True,,42.6040782,map_0030
+screen_0039,direct_pareto_confirmation_reused,True,MEI_2021,300,5,1.0,0.5,completed,0.2752281217760071,2157.5663380634296,208,multicomponent,True,,19.53287760000057,map_0126
+screen_0046,direct_pareto_confirmation_reused,True,MEI_2021,300,5,1.1,0.4,completed,0.2049143439353402,2113.6496401950835,185,multicomponent,True,,14.019870500000252,map_0030

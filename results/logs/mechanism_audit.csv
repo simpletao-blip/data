@@ -1,0 +1,180 @@
+mechanism_file,sha256,status,warning_count,warnings,error,path,phase,species_count,reaction_count,duplicate_equation_count,transport_model,multicomponent_transport_available,nonfinite_forward_rate_count,negative_forward_rate_count,declared_negative_A_count,negative_equation_aggregate_count,benchmark_composition,elements
+mechanisms\raw\POLIMI_2023.yaml,5806f8f19a25141e2c4946af8a8f75ce51bc75f3f67fb9013e253ff464482786,passed,0,,,mechanisms\raw\POLIMI_2023.yaml,gas,31,203,9,multicomponent,True,0,0,0,0,"(('NH3', 1.0), ('H2', 0.5), ('O2', 1.25), ('N2', 4.7))","('C', 'H', 'N', 'O', 'Ar', 'He')"
+mechanisms\converted\Konnov_2026.yaml,726f35670a3844636e10d003288dc742900a8b72917f483bb12641e6c41910c6,passed_with_warnings,3,"Kinetics::checkDuplicates: 
+*******************************************************************************
+InputFileError thrown by Kinetics::checkDuplicates:
+Error on lines 789 and 984 of ./mechanisms\converted\Konnov_2026.yaml:
+Undeclared duplicate third body reactions with a common third body detected.
+Add the field 'explicit-third-body-duplicates: mark-duplicate' or
+'explicit-third-body-duplicates: modify-efficiency' to the YAML phase entry
+to choose how these reactions should be handled and suppress this warning.
+Reaction 1: 2 H + O2 <=> H2 + O2
+Reaction 74: 2 H + M <=> H2 + M
+
+|  Line |
+|   784 |     diameter: 3.61
+|   785 |     polarizability: 1.756
+|   786 |     rotational-relaxation: 4.0
+|   787 | 
+|   788 | reactions:
+>   789 > - equation: H + H + M <=> H2 + M  # Reaction 1
+            ^
+|   790 |   type: three-body
+|   791 |   rate-constant: {A: 7.0e+17, b: -1.0, Ea: 0.0}
+|   792 |   efficiencies: {H2: 0.0, N2: 0.0, H: 0.0, H2O: 14.3}
+...
+|   979 |     OH*+H2O=H2O2+H                              2.960E+12          0.5              -861.0   
+|   980 | - equation: OH* + NH3 <=> OH + NH3  # Reaction 72
+|   981 |   rate-constant: {A: 1.17e+10, b: 1.4, Ea: -1500.0}
+|   982 | - equation: OH* => OH  # Reaction 73
+|   983 |   rate-constant: {A: 1.4e+06, b: 0.0, Ea: 0.0}
+>   984 > - equation: H + O2 + H <=> H2 + O2  # Reaction 74
+            ^
+|   985 |   rate-constant: {A: 8.8e+22, b: -1.835, Ea: 800.0}
+|   986 | - equation: H + O2 + H <=> OH + OH  # Reaction 75
+|   987 |   rate-constant: {A: 4.0e+22, b: -1.835, Ea: 800.0}
+******************************************************************************* | Kinetics::checkDuplicates: 
+*******************************************************************************
+InputFileError thrown by Kinetics::checkDuplicates:
+Error on lines 805 and 988 of ./mechanisms\converted\Konnov_2026.yaml:
+Undeclared duplicate third body reactions with a common third body detected.
+Add the field 'explicit-third-body-duplicates: mark-duplicate' or
+'explicit-third-body-duplicates: modify-efficiency' to the YAML phase entry
+to choose how these reactions should be handled and suppress this warning.
+Reaction 6: H + O + O2 <=> OH + O2
+Reaction 76: H + O + M <=> OH + M
+
+|  Line |
+|   800 |   rate-constant: {A: 3.2e+15, b: 0.0, Ea: 0.0}
+|   801 | - equation: O + O + M <=> O2 + M  # Reaction 5
+|   802 |   type: three-body
+|   803 |   rate-constant: {A: 1.0e+17, b: -1.0, Ea: 0.0}
+|   804 |   efficiencies: {O: 28.8, O2: 8.0, N2: 2.0, H2O: 5.0, NO: 2.0, N: 2.0}
+>   805 > - equation: O + H + M <=> OH + M  # Reaction 6
+            ^
+|   806 |   type: three-body
+|   807 |   rate-constant: {A: 6.75e+18, b: -1.0, Ea: 0.0}
+|   808 |   efficiencies: {H2O: 5.0}
+...
+|   983 |   rate-constant: {A: 1.4e+06, b: 0.0, Ea: 0.0}
+|   984 | - equation: H + O2 + H <=> H2 + O2  # Reaction 74
+|   985 |   rate-constant: {A: 8.8e+22, b: -1.835, Ea: 800.0}
+|   986 | - equation: H + O2 + H <=> OH + OH  # Reaction 75
+|   987 |   rate-constant: {A: 4.0e+22, b: -1.835, Ea: 800.0}
+>   988 > - equation: H + O2 + O <=> OH + O2  # Reaction 76
+            ^
+|   989 |   rate-constant: {A: 7.35e+22, b: -1.835, Ea: 800.0}
+|   990 | - equation: H + O2 + OH <=> H2O + O2  # Reaction 77
+|   991 |   rate-constant: {A: 2.56e+22, b: -1.835, Ea: 800.0}
+******************************************************************************* | Kinetics::checkDuplicates: 
+*******************************************************************************
+InputFileError thrown by Kinetics::checkDuplicates:
+Error on lines 809 and 990 of ./mechanisms\converted\Konnov_2026.yaml:
+Undeclared duplicate third body reactions with a common third body detected.
+Add the field 'explicit-third-body-duplicates: mark-duplicate' or
+'explicit-third-body-duplicates: modify-efficiency' to the YAML phase entry
+to choose how these reactions should be handled and suppress this warning.
+Reaction 7: H + OH + O2 <=> H2O + O2
+Reaction 77: H2O + M <=> H + OH + M
+
+|  Line |
+|   804 |   efficiencies: {O: 28.8, O2: 8.0, N2: 2.0, H2O: 5.0, NO: 2.0, N: 2.0}
+|   805 | - equation: O + H + M <=> OH + M  # Reaction 6
+|   806 |   type: three-body
+|   807 |   rate-constant: {A: 6.75e+18, b: -1.0, Ea: 0.0}
+|   808 |   efficiencies: {H2O: 5.0}
+>   809 > - equation: H2O + M <=> H + OH + M  # Reaction 7
+            ^
+|   810 |   type: three-body
+|   811 |   rate-constant: {A: 6.06e+27, b: -3.312, Ea: 1.2077e+05}
+|   812 |   efficiencies: {H2O: 0.0, H2: 3.0, N2: 2.0, O2: 1.5, HE: 1.1}
+...
+|   985 |   rate-constant: {A: 8.8e+22, b: -1.835, Ea: 800.0}
+|   986 | - equation: H + O2 + H <=> OH + OH  # Reaction 75
+|   987 |   rate-constant: {A: 4.0e+22, b: -1.835, Ea: 800.0}
+|   988 | - equation: H + O2 + O <=> OH + O2  # Reaction 76
+|   989 |   rate-constant: {A: 7.35e+22, b: -1.835, Ea: 800.0}
+>   990 > - equation: H + O2 + OH <=> H2O + O2  # Reaction 77
+            ^
+|   991 |   rate-constant: {A: 2.56e+22, b: -1.835, Ea: 800.0}
+|   992 | - equation: N + OH <=> NO + H  # Reaction 78
+|   993 |   rate-constant: {A: 1.33e+14, b: -0.25, Ea: 0.0}
+*******************************************************************************",,mechanisms\converted\Konnov_2026.yaml,gas,44,437,21,multicomponent,True,0,1,1,0,"(('NH3', 1.0), ('H2', 0.5), ('O2', 1.25), ('N2', 4.7))","('C', 'O', 'N', 'H', 'Ar', 'He')"
+mechanisms\converted\NUIGMech1.1_HT.yaml,0cc824ccb5fbf0c8b0be9c036fab52995eb3527262524c03e34aacfef3f079f4,passed_with_warnings,4,"NasaPoly2::validate: 
+For species CHV, discontinuity in h/RT detected at Tmid = 1000
+	Value computed using low-temperature polynomial:  107.5046684
+	Value computed using high-temperature polynomial: 107.34847808033332 | NasaPoly2::validate: 
+For species OHV, discontinuity in h/RT detected at Tmid = 1000
+	Value computed using low-temperature polynomial:  53.62056162666667
+	Value computed using high-temperature polynomial: 53.5841554314 | Kinetics::checkDuplicates: 
+*******************************************************************************
+InputFileError thrown by Kinetics::checkDuplicates:
+Error on lines 17545 and 17578 of ./mechanisms\converted\NUIGMech1.1_HT.yaml:
+Undeclared duplicate third body reactions with a common third body detected.
+Add the field 'explicit-third-body-duplicates: mark-duplicate' or
+'explicit-third-body-duplicates: modify-efficiency' to the YAML phase entry
+to choose how these reactions should be handled and suppress this warning.
+Reaction 1: 2 H + O2 <=> H2 + O2
+Reaction 5: H2 + M <=> 2 H + M
+
+|  Line |
+|  17540 |     polarizability: 12.16
+|  17541 |     rotational-relaxation: 1.0
+|  17542 |     note: '\AUTHOR: WARNING !\REF: WARNING !\COMMENT: ESTIMATED'
+|  17543 | 
+|  17544 | reactions:
+>  17545 > - equation: H2 + M <=> H + H + M  # Reaction 1
+            ^
+|  17546 |   type: three-body
+|  17547 |   rate-constant: {A: 4.577e+19, b: -1.4, Ea: 1.044e+05}
+|  17548 |   efficiencies: {HE: 0.83, CO: 1.9, CH4: 2.0, H2: 2.5, C2H6: 3.0, CO2: 
+...
+|  17573 |     \Author: SP !\Ref: BAULCH, D. L.; BOWMAN, C. T.; COBOS, J PHYS CHEM REF DATA 2005, 34, 757-1397. !\Comment: WARNING 
+|  17574 | - equation: H2 + OH <=> H + H2O  # Reaction 4
+|  17575 |   rate-constant: {A: 2.2e+08, b: 1.51, Ea: 3430.0}
+|  17576 |   note: |
+|  17577 |     \Author: UB !\Ref: J.V.MICHAEL SUTHERLAND, J.PHYS.CHEM. 92(1988) 3853 !\Comment: WARNING 
+>  17578 > - equation: H + O2 + H <=> H2 + O2  # Reaction 5
+            ^
+|  17579 |   rate-constant: {A: 8.8e+22, b: -1.835, Ea: 800.0}
+|  17580 |   note: |
+|  17581 |     ___________________________________________________________________________________________________________ 
+******************************************************************************* | Kinetics::checkDuplicates: 
+*******************************************************************************
+InputFileError thrown by Kinetics::checkDuplicates:
+Error on lines 17589 and 17645 of ./mechanisms\converted\NUIGMech1.1_HT.yaml:
+Undeclared duplicate third body reactions with a common third body detected.
+Add the field 'explicit-third-body-duplicates: mark-duplicate' or
+'explicit-third-body-duplicates: modify-efficiency' to the YAML phase entry
+to choose how these reactions should be handled and suppress this warning.
+Reaction 7: H + O + M <=> OH + M
+Reaction 13: H + O + O2 <=> OH + O2
+
+|  Line |
+|  17584 |     \Author: WARNING !\Ref: WARNING !\Comment: WARNING 
+|  17585 | - equation: H + O2 + H <=> OH + OH  # Reaction 6
+|  17586 |   rate-constant: {A: 4.0e+22, b: -1.835, Ea: 800.0}
+|  17587 |   note: |
+|  17588 |     \Author: WARNING !\Ref: WARNING !\Comment: WARNING 
+>  17589 > - equation: H + O2 + O <=> OH + O2  # Reaction 7
+            ^
+|  17590 |   rate-constant: {A: 7.35e+22, b: -1.835, Ea: 800.0}
+|  17591 |   note: |
+|  17592 |     \Author: WARNING !\Ref: WARNING !\Comment: WARNING 
+...
+|  17640 |   note: |
+|  17641 |     ___________________________________________________________________________________________________________ 
+|  17642 |     \REACTIONCLASS: RH+R_ABSTRACTION
+|  17643 |     ___________________________________________________________________________________________________________ 
+|  17644 |     \Author: WARNING !\Ref: G. ALTINAY, J. PHYS. CHEM. A, 118(2014), PP. 38-54 !\Comment: WARNING 
+>  17645 > - equation: O + H + M <=> OH + M  # Reaction 13
+            ^
+|  17646 |   type: three-body
+|  17647 |   rate-constant: {A: 4.714e+18, b: -1.0, Ea: 0.0}
+|  17648 |   efficiencies: {HE: 0.75, AR: 0.75, CO: 1.5, CO2: 2.0, CH4: 2.0, H2: 
+*******************************************************************************",,mechanisms\converted\NUIGMech1.1_HT.yaml,gas,923,5966,66,multicomponent,True,0,0,0,0,"(('NH3', 1.0), ('H2', 0.5), ('O2', 1.25), ('N2', 4.7))","('C', 'H', 'N', 'O', 'Ar', 'He')"
+mechanisms\converted\UCSD_2018.yaml,1ca721f2029f69895558f0ed07f6548bcc04865941c8f5c7cefd24152d85c097,passed,0,,,mechanisms\converted\UCSD_2018.yaml,gas,20,41,1,multicomponent,True,0,0,0,0,"(('NH3', 1.0), ('H2', 0.5), ('O2', 1.25), ('N2', 4.7))","('H', 'O', 'N', 'Ar')"
+mechanisms\converted\Shrestha_2018.yaml,f3a4fde717b23df2841ef790187a89a72bd0ae07c8b466f46223af7afb5181d8,passed_with_warnings,1,"NasaPoly2::validate: 
+For species HOCHO, discontinuity in h/RT detected at Tmid = 1000
+	Value computed using low-temperature polynomial:  -40.36035916666667
+	Value computed using high-temperature polynomial: -38.16786118416666",,mechanisms\converted\Shrestha_2018.yaml,gas,124,1081,30,multicomponent,True,0,0,0,0,"(('NH3', 1.0), ('H2', 0.5), ('O2', 1.25), ('N2', 4.7))","('C', 'H', 'O', 'N', 'Ar', 'He')"

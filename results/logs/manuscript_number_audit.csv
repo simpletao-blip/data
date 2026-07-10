@@ -1,0 +1,26 @@
+claim_id,expected_text,present,source
+record_count,"5,011",True,data/processed/respecth_nh3_long.csv
+source_files,306,True,data/raw/respecth_nh3_v2_3
+campaigns,38,True,figures/source_data/figure2_coverage_summary.csv
+stacking_mare,15.46%,True,results/processed/lbv_method_summary.csv
+equal_mare,18.26%,True,results/processed/lbv_method_summary.csv
+best_single_mare,15.09%,True,results/processed/lbv_method_summary.csv
+interval_coverage,91.18%,True,results/processed/lbv_loco_predictions.csv
+inside_surrogate_low,0.760%,True,results/processed/lbv_surrogate_summary.csv
+inside_surrogate_high,1.483%,True,results/processed/lbv_surrogate_summary.csv
+inside_surrogate_max_case,6.69%,True,results/processed/lbv_surrogate_admissibility.csv
+outside_coverage_low,58.3%,True,results/processed/lbv_surrogate_summary.csv
+rmg_map_completion,142/144,True,results/raw/RMG_2026_Burke_lbv_map.csv
+nox_median_range,49.70%,True,results/processed/reactor_robust_summary.csv
+nox_max_range,62.49%,True,results/processed/reactor_robust_summary.csv
+n2o_max_range,83.69%,True,results/processed/reactor_robust_summary.csv
+nh3_max_range,94.24%,True,results/processed/reactor_robust_summary.csv
+proxy_pareto,3,True,results/processed/full_proxy_robust_summary.csv
+exploratory_pareto,64,True,results/processed/full_proxy_robust_summary.csv
+thermo_incomplete,7,True,results/processed/full_proxy_robust_summary.csv
+direct_count,24,True,results/processed/pareto_flame_confirmation.csv
+direct_error_median,0.35%,True,results/processed/pareto_flame_confirmation.csv
+direct_error_max,2.02%,True,results/processed/pareto_flame_confirmation.csv
+dispersion_quantile_counts,"1, 1, 1, 3, 3, 5 and 8",True,results/processed/pareto_dispersion_quantile_summary.csv
+jsr_gate,0/8,True,results/processed/jsr_observable_gate.csv
+idt_count,46,True,results/processed/idt_model_summary.csv

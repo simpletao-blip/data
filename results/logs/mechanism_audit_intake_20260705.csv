@@ -1,0 +1,224 @@
+mechanism_file,sha256,status,warning_count,warnings,error,path,phase,species_count,reaction_count,duplicate_equation_count,transport_model,multicomponent_transport_available,nonfinite_forward_rate_count,negative_forward_rate_count,declared_negative_A_count,negative_equation_aggregate_count,benchmark_composition,elements
+mechanisms\converted\NUIG_2024_utf8.yaml,59df96c28a31c2b145aef975518c378cbe468326e9bc42b5e923fddb48648ea5,passed,0,,,mechanisms\converted\NUIG_2024_utf8.yaml,gas,43,312,14,multicomponent,True,0,2,2,0,"(('NH3', 1.0), ('H2', 0.5), ('O2', 1.25), ('N2', 4.7))","('C', 'H', 'O', 'N', 'Ar', 'He')"
+mechanisms\converted\MEI_2021_normalized.yaml,a4609a74869df4648a4499dfae95e54c3779322bd9ef82d2ab18c47d23f38eee,passed_with_warnings,6,"NasaPoly2::validate: 
+For species FN2, discontinuity in cp/R detected at Tmid = 1000
+	Value computed using low-temperature polynomial:  83.48840499999999
+	Value computed using high-temperature polynomial: 85.411837904 | NasaPoly2::validate: 
+For species FN2, discontinuity in h/RT detected at Tmid = 1000
+	Value computed using low-temperature polynomial:  84.43967206333335
+	Value computed using high-temperature polynomial: 84.15778749879999 | NasaPoly2::validate: 
+For species FN2, discontinuity in s/R detected at Tmid = 1000
+	Value computed using low-temperature polynomial:  130.12903194336144
+	Value computed using high-temperature polynomial: 129.8739757260846 | Kinetics::checkDuplicates: 
+*******************************************************************************
+InputFileError thrown by Kinetics::checkDuplicates:
+Error on lines 753 and 844 of ./mechanisms\converted\MEI_2021_normalized.yaml:
+Undeclared duplicate third body reactions with a common third body detected.
+Add the field 'explicit-third-body-duplicates: mark-duplicate' or
+'explicit-third-body-duplicates: modify-efficiency' to the YAML phase entry
+to choose how these reactions should be handled and suppress this warning.
+Reaction 6: 2 H + O2 <=> H2 + O2
+Reaction 21: H2 + M <=> 2 H + M
+
+|  Line |
+|   748 |     M. Sangwan, L. N. Krasnoperov, The Journal of Physical Chemistry A 116 (2012) 11817?1822.                                                                                  
+|   749 | - equation: OH + OH <=> O + H2O  # Reaction 5
+|   750 |   duplicate: true
+|   751 |   rate-constant: {A: -2.697e+10, b: 0.567, Ea: 0.0}
+|   752 |   negative-A: true
+>   753 > - equation: H2 + M <=> H + H + M  # Reaction 6
+            ^
+|   754 |   type: three-body
+|   755 |   rate-constant: {A: 4.577e+19, b: -1.4, Ea: 1.0438e+05}
+|   756 |   efficiencies: {H2: 2.5, H2O: 12.0, CO: 1.9, CO2: 3.8, AR: 0.0, HE: 
+...
+|   839 |   note: |
+|   840 |     M. P. Burke, S. J. Klippenstein, L. B. Harding, Proceedings of the Combustion Institute 34 (2013) 547?55.                                                                  
+|   841 | - equation: HO2 + OH <=> H2O + O2  # Reaction 20
+|   842 |   duplicate: true
+|   843 |   rate-constant: {A: 1.21e+09, b: 1.24, Ea: -1310.0}
+>   844 > - equation: H + O2 + H <=> H2 + O2  # Reaction 21
+            ^
+|   845 |   rate-constant: {A: 8.8e+22, b: -1.835, Ea: 800.0}
+|   846 |   note: |
+|   847 |     M. Burke, S. Klippenstein, Nature Chemistry, 9, 1078¨C1082 (2017)
+******************************************************************************* | Kinetics::checkDuplicates: 
+*******************************************************************************
+InputFileError thrown by Kinetics::checkDuplicates:
+Error on lines 782 and 850 of ./mechanisms\converted\MEI_2021_normalized.yaml:
+Undeclared duplicate third body reactions with a common third body detected.
+Add the field 'explicit-third-body-duplicates: mark-duplicate' or
+'explicit-third-body-duplicates: modify-efficiency' to the YAML phase entry
+to choose how these reactions should be handled and suppress this warning.
+Reaction 12: H + O + O2 <=> OH + O2
+Reaction 23: H + O + M <=> OH + M
+
+|  Line |
+|   777 |   rate-constant: {A: 1.886e+13, b: 0.0, Ea: -1788.0}
+|   778 |   note: |
+|   779 |     Tsang and Hampson, J. Phys. Chem. Ref. Data, 15:1087 (1986)                                                                                                                
+|   780 | - equation: O + O + HE <=> O2 + HE  # Reaction 11
+|   781 |   rate-constant: {A: 1.886e+13, b: 0.0, Ea: -1788.0}
+>   782 > - equation: O + H + M <=> OH + M  # Reaction 12
+            ^
+|   783 |   type: three-body
+|   784 |   rate-constant: {A: 4.714e+18, b: -1.0, Ea: 0.0}
+|   785 |   efficiencies: {H2: 2.5, H2O: 12.0, AR: 0.75, HE: 0.75, CO: 1.9, CO2: 
+...
+|   845 |   rate-constant: {A: 8.8e+22, b: -1.835, Ea: 800.0}
+|   846 |   note: |
+|   847 |     M. Burke, S. Klippenstein, Nature Chemistry, 9, 1078¨C1082 (2017)
+|   848 | - equation: H + O2 + H <=> OH + OH  # Reaction 22
+|   849 |   rate-constant: {A: 4.0e+22, b: -1.835, Ea: 800.0}
+>   850 > - equation: H + O2 + O <=> OH + O2  # Reaction 23
+            ^
+|   851 |   rate-constant: {A: 7.35e+22, b: -1.835, Ea: 800.0}
+|   852 | - equation: H + O2 + OH <=> H2O + O2  # Reaction 24
+|   853 |   rate-constant: {A: 2.56e+22, b: -1.835, Ea: 800.0}
+******************************************************************************* | Kinetics::checkDuplicates: 
+*******************************************************************************
+InputFileError thrown by Kinetics::checkDuplicates:
+Error on lines 789 and 852 of ./mechanisms\converted\MEI_2021_normalized.yaml:
+Undeclared duplicate third body reactions with a common third body detected.
+Add the field 'explicit-third-body-duplicates: mark-duplicate' or
+'explicit-third-body-duplicates: modify-efficiency' to the YAML phase entry
+to choose how these reactions should be handled and suppress this warning.
+Reaction 13: H + OH + O2 <=> H2O + O2
+Reaction 24: H2O + M <=> H + OH + M
+
+|  Line |
+|   784 |   rate-constant: {A: 4.714e+18, b: -1.0, Ea: 0.0}
+|   785 |   efficiencies: {H2: 2.5, H2O: 12.0, AR: 0.75, HE: 0.75, CO: 1.9, CO2: 
+|   786 |       3.8}
+|   787 |   note: |
+|   788 |     Tsang and Hampson, J. Phys. Chem. Ref. Data, 15:1087 (1986)                                                                                                                
+>   789 > - equation: H2O + M <=> H + OH + M  # Reaction 13
+            ^
+|   790 |   type: three-body
+|   791 |   rate-constant: {A: 6.064e+27, b: -3.322, Ea: 1.2079e+05}
+|   792 |   efficiencies: {H2: 3.0, H2O: 0.0, HE: 1.1, N2: 2.0, FN2: 2.0, O2: 
+...
+|   847 |     M. Burke, S. Klippenstein, Nature Chemistry, 9, 1078¨C1082 (2017)
+|   848 | - equation: H + O2 + H <=> OH + OH  # Reaction 22
+|   849 |   rate-constant: {A: 4.0e+22, b: -1.835, Ea: 800.0}
+|   850 | - equation: H + O2 + O <=> OH + O2  # Reaction 23
+|   851 |   rate-constant: {A: 7.35e+22, b: -1.835, Ea: 800.0}
+>   852 > - equation: H + O2 + OH <=> H2O + O2  # Reaction 24
+            ^
+|   853 |   rate-constant: {A: 2.56e+22, b: -1.835, Ea: 800.0}
+|   854 | - equation: HO2 + HO2 <=> H2O2 + O2  # Reaction 25
+|   855 |   duplicate: true
+*******************************************************************************",,mechanisms\converted\MEI_2021_normalized.yaml,gas,40,257,10,multicomponent,True,0,3,3,0,"(('NH3', 1.0), ('H2', 0.5), ('O2', 1.25), ('N2', 4.7))","('O', 'H', 'N', 'C', 'Ar', 'He')"
+mechanisms\converted\Otomo_2018.yaml,5373be7f240eaf9c753fa0a419a70aea9107eaa19218acd64849296efe3c816f,passed,0,,,mechanisms\converted\Otomo_2018.yaml,gas,32,213,11,multicomponent,True,0,2,2,0,"(('NH3', 1.0), ('H2', 0.5), ('O2', 1.25), ('N2', 4.7))","('O', 'H', 'N', 'He', 'Ar')"
+mechanisms\converted\KAUST_2023.yaml,6859a53053d9835ff8c3a1c1ead162c841afa2425932ee5abf38adae8c9fb0ae,passed_with_warnings,7,"NasaPoly2::validate: 
+For species HOCO, discontinuity in h/RT detected at Tmid = 1000
+	Value computed using low-temperature polynomial:  -17.172475436
+	Value computed using high-temperature polynomial: -16.636799402079998 | NasaPoly2::validate: 
+For species CH2OCH, discontinuity in cp/R detected at Tmid = 500
+	Value computed using low-temperature polynomial:  8.393471510000001
+	Value computed using high-temperature polynomial: 9.1801039121875 | NasaPoly2::validate: 
+For species CH2OCH, discontinuity in h/RT detected at Tmid = 500
+	Value computed using low-temperature polynomial:  42.199147089791666
+	Value computed using high-temperature polynomial: 41.961461604875005 | NasaPoly2::validate: 
+For species CH2OCH, discontinuity in s/R detected at Tmid = 500
+	Value computed using low-temperature polynomial:  33.70692865946735
+	Value computed using high-temperature polynomial: 33.51209988778391 | Kinetics::checkDuplicates: 
+*******************************************************************************
+InputFileError thrown by Kinetics::checkDuplicates:
+Error on lines 2938 and 3036 of ./mechanisms\converted\KAUST_2023.yaml:
+Undeclared duplicate third body reactions with a common third body detected.
+Add the field 'explicit-third-body-duplicates: mark-duplicate' or
+'explicit-third-body-duplicates: modify-efficiency' to the YAML phase entry
+to choose how these reactions should be handled and suppress this warning.
+Reaction 7: 2 H + O2 <=> H2 + O2
+Reaction 22: H2 + M <=> 2 H + M
+
+|  Line |
+|  2933 | - equation: OH + OH <=> O + H2O  # Reaction 6
+|  2934 |   duplicate: true
+|  2935 |   rate-constant: {A: 2.6e+11, b: -0.057, Ea: -827.0}
+|  2936 |   note: |2+
+|  2937 | 
+>  2938 > - equation: H2 + M <=> H + H + M  # Reaction 7
+            ^
+|  2939 |   type: three-body
+|  2940 |   rate-constant: {A: 4.577e+19, b: -1.4, Ea: 1.0438e+05}
+|  2941 |   efficiencies: {H2: 2.5, H2O: 12.0, CO: 1.9, CO2: 3.8, AR: 0.0, HE: 
+...
+|  3031 |   note: |
+|  3032 |     M. P. Burke, S. J. Klippenstein, L. B. Harding, Proceedings of the Combustion Institute 34 (2013) 547?55.                                                                  
+|  3033 | - equation: HO2 + OH <=> H2O + O2  # Reaction 21
+|  3034 |   duplicate: true
+|  3035 |   rate-constant: {A: 1.21e+09, b: 1.24, Ea: -1310.0}
+>  3036 > - equation: H + O2 + H <=> H2 + O2  # Reaction 22
+            ^
+|  3037 |   rate-constant: {A: 8.8e+22, b: -1.835, Ea: 800.0}
+|  3038 |   note: |
+|  3039 |     M. Burke, S. Klippenstein, Nature Chemistry, 9, 1078 V1082 (2017)
+******************************************************************************* | Kinetics::checkDuplicates: 
+*******************************************************************************
+InputFileError thrown by Kinetics::checkDuplicates:
+Error on lines 2967 and 3042 of ./mechanisms\converted\KAUST_2023.yaml:
+Undeclared duplicate third body reactions with a common third body detected.
+Add the field 'explicit-third-body-duplicates: mark-duplicate' or
+'explicit-third-body-duplicates: modify-efficiency' to the YAML phase entry
+to choose how these reactions should be handled and suppress this warning.
+Reaction 13: H + O + O2 <=> OH + O2
+Reaction 24: H + O + M <=> OH + M
+
+|  Line |
+|  2962 |   rate-constant: {A: 1.886e+13, b: 0.0, Ea: -1788.0}
+|  2963 |   note: |
+|  2964 |     Tsang and Hampson, J. Phys. Chem. Ref. Data, 15:1087 (1986)                                                                                                                
+|  2965 | - equation: O + O + HE <=> O2 + HE  # Reaction 12
+|  2966 |   rate-constant: {A: 1.886e+13, b: 0.0, Ea: -1788.0}
+>  2967 > - equation: O + H + M <=> OH + M  # Reaction 13
+            ^
+|  2968 |   type: three-body
+|  2969 |   rate-constant: {A: 4.714e+18, b: -1.0, Ea: 0.0}
+|  2970 |   efficiencies: {H2: 2.5, H2O: 12.0, AR: 0.75, HE: 0.75, CO: 1.9, CO2: 
+...
+|  3037 |   rate-constant: {A: 8.8e+22, b: -1.835, Ea: 800.0}
+|  3038 |   note: |
+|  3039 |     M. Burke, S. Klippenstein, Nature Chemistry, 9, 1078 V1082 (2017)
+|  3040 | - equation: H + O2 + H <=> OH + OH  # Reaction 23
+|  3041 |   rate-constant: {A: 4.0e+22, b: -1.835, Ea: 800.0}
+>  3042 > - equation: H + O2 + O <=> OH + O2  # Reaction 24
+            ^
+|  3043 |   rate-constant: {A: 7.35e+22, b: -1.835, Ea: 800.0}
+|  3044 | - equation: H + O2 + OH <=> H2O + O2  # Reaction 25
+|  3045 |   rate-constant: {A: 2.56e+22, b: -1.835, Ea: 800.0}
+******************************************************************************* | Kinetics::checkDuplicates: 
+*******************************************************************************
+InputFileError thrown by Kinetics::checkDuplicates:
+Error on lines 2974 and 3044 of ./mechanisms\converted\KAUST_2023.yaml:
+Undeclared duplicate third body reactions with a common third body detected.
+Add the field 'explicit-third-body-duplicates: mark-duplicate' or
+'explicit-third-body-duplicates: modify-efficiency' to the YAML phase entry
+to choose how these reactions should be handled and suppress this warning.
+Reaction 14: H + OH + O2 <=> H2O + O2
+Reaction 25: H2O + M <=> H + OH + M
+
+|  Line |
+|  2969 |   rate-constant: {A: 4.714e+18, b: -1.0, Ea: 0.0}
+|  2970 |   efficiencies: {H2: 2.5, H2O: 12.0, AR: 0.75, HE: 0.75, CO: 1.9, CO2: 
+|  2971 |       3.8}
+|  2972 |   note: |
+|  2973 |     Tsang and Hampson, J. Phys. Chem. Ref. Data, 15:1087 (1986)                                                                                                                
+>  2974 > - equation: H2O + M <=> H + OH + M  # Reaction 14
+            ^
+|  2975 |   type: three-body
+|  2976 |   rate-constant: {A: 6.064e+27, b: -3.322, Ea: 1.2079e+05}
+|  2977 |   efficiencies: {H2: 3.0, H2O: 0.0, HE: 1.1, N2: 2.0, O2: 1.5, CO: 1.9,
+...
+|  3039 |     M. Burke, S. Klippenstein, Nature Chemistry, 9, 1078 V1082 (2017)
+|  3040 | - equation: H + O2 + H <=> OH + OH  # Reaction 23
+|  3041 |   rate-constant: {A: 4.0e+22, b: -1.835, Ea: 800.0}
+|  3042 | - equation: H + O2 + O <=> OH + O2  # Reaction 24
+|  3043 |   rate-constant: {A: 7.35e+22, b: -1.835, Ea: 800.0}
+>  3044 > - equation: H + O2 + OH <=> H2O + O2  # Reaction 25
+            ^
+|  3045 |   rate-constant: {A: 2.56e+22, b: -1.835, Ea: 800.0}
+|  3046 | - equation: HO2 + HO2 <=> H2O2 + O2  # Reaction 26
+|  3047 |   rate-constant: {A: 0.0193, b: 4.12, Ea: -4960.0}
+*******************************************************************************",,mechanisms\converted\KAUST_2023.yaml,gas,152,1388,51,multicomponent,True,0,0,0,0,"(('NH3', 1.0), ('H2', 0.5), ('O2', 1.25), ('N2', 4.7))","('C', 'H', 'N', 'Ar', 'He', 'O')"

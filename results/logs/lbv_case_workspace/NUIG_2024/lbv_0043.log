@@ -1,0 +1,9 @@
+returncode=0
+runtime_s=12.772068
+--- stdout ---
+lbv_0043 ok 11.60s
+status
+completed    1
+results\logs\lbv_case_workspace\NUIG_2024\lbv_0043_result.csv
+
+--- stderr ---

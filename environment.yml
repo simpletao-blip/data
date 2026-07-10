@@ -1,0 +1,16 @@
+name: cantera
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - cantera=3.2
+  - numpy>=2.5
+  - pandas>=3.0
+  - scipy>=1.18
+  - scikit-learn>=1.9
+  - matplotlib>=3.11
+  - seaborn>=0.13
+  - pyyaml>=6.0
+  - pytest>=9.1
+  - jupyterlab>=4.6
+

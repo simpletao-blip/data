@@ -1,0 +1,42 @@
+study:
+  title: Cross-validated multi-mechanism ensembles reveal robust combustion-side operating windows for partially cracked ammonia
+  random_seed: 20260703
+  inference_boundary: zero- and one-dimensional validated domain
+
+composition:
+  cracking_ratios: [0.0, 0.05, 0.10, 0.20, 0.30, 0.40, 0.50, 0.70]
+  equivalence_ratios: [0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.4]
+  oxidizer: {O2: 1.0, N2: 3.76}
+
+ignition:
+  temperatures_K: [850, 950, 1050, 1200, 1400, 1600, 1800]
+  pressures_bar: [1, 5, 10, 20]
+  reactor: constant_volume
+  criterion: max_dTdt
+  max_time_s: 5.0
+
+flame:
+  unburned_temperatures_K: [300, 450, 600, 750]
+  pressures_bar: [1, 5, 10, 20]
+  width_m: 0.05
+  transport_model: multicomponent
+  soret: true
+  refine: {ratio: 3.0, slope: 0.06, curve: 0.10}
+
+reactor_network:
+  inlet_temperatures_K: [600, 750]
+  pressures_bar: [5, 10, 20]
+  residence_times_ms: [5, 10, 20]
+  heat_loss_cases_W_per_K: [0.0, 0.5, 2.0]
+  psr_fractions: [0.3, 0.5, 0.7]
+  reactor_volume_m3: 0.001
+  oxygen_reference_dry: 0.15
+
+ensemble:
+  group_column: campaign_id
+  observables: [ignition_delay_s, laminar_burning_velocity_m_per_s, NO, NO2, N2O, NH3]
+  bootstrap_replicates: 2000
+  interval_level: 0.90
+
+energy:
+  heat_recovery_fractions: [0.0, 0.5, 0.8]

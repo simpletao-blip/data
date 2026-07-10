@@ -1,0 +1,12 @@
+mechanism_id,family_group,notes
+POLIMI_2023,CRECK_POLIMI,CRECK/POLIMI release
+Konnov_2026,Konnov,Konnov release
+NUIGMech1.1_HT,Galway,Galway/NUIG family
+Shrestha_2018,Shrestha,Shrestha-Seidel-Zeuch-Mauss family
+MEI_2019,Mei,Mei mechanism family
+C3_v3_5_C0,C3_consortium,C3 consortium composite; inheritance overlaps other groups
+RMG_2026_Burke,RMG,RMG-generated model; Burke-linear variant
+NUIG_2024,Galway,Galway/NUIG family
+MEI_2021,Mei,Mei mechanism family
+Otomo_2018,Otomo,Otomo mechanism family
+KAUST_2023,KAUST,KAUST NH3-NOx-C1 family

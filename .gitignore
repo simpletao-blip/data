@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.idea/
+.vscode/
+*.tiff
+*.tif
+qa_*/
+docx_render/
+libreoffice_*_profile/

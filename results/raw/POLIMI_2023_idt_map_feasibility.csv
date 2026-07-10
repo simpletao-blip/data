@@ -1,0 +1,13 @@
+design_id,design_role,inside_all_idt_convex_hull,inside_exact_criterion_convex_hull,mechanism_id,temperature_K,pressure_bar,equivalence_ratio,cracking_ratio,criterion,reactor,status,ignition_delay_s,final_temperature_K,max_temperature_K,integration_steps,converged,failure_reason,runtime_s
+map_0001,training,True,False,POLIMI_2023,1600,10,1.0,0.2,max_dTdt,constant_volume,completed,1.2426194223918757e-05,3111.632544592243,3111.6325446111905,1661,True,,0.0944247000006726
+map_0002,training,True,False,POLIMI_2023,1200,5,1.1,0.5,max_dTdt,constant_volume,completed,3.957890711601869e-05,2961.158409933647,2961.158409993133,1718,True,,0.06300449999980628
+map_0003,training,True,False,POLIMI_2023,1800,5,0.6,0.0,max_dTdt,constant_volume,completed,6.912376171556201e-05,2887.369956621293,2887.814443203758,1785,True,,0.07014889999845764
+map_0004,training,True,False,POLIMI_2023,1800,20,1.4,0.0,max_dTdt,constant_volume,completed,2.503496673129157e-05,3198.22144043601,3207.800411849439,1971,True,,0.07512489999862737
+map_0005,training,True,False,POLIMI_2023,1400,5,1.4,0.1,max_dTdt,constant_volume,completed,0.00015756964874594738,2926.0125415207394,2959.188830142752,2116,True,,0.09415420000004815
+map_0006,training,True,False,POLIMI_2023,1600,20,0.6,0.1,max_dTdt,constant_volume,completed,2.127499149044923e-05,2848.5258111833105,2853.481062447992,1934,True,,0.0747239999982412
+map_0007,training,True,False,POLIMI_2023,1800,5,1.4,0.3,max_dTdt,constant_volume,completed,7.478616283786575e-06,3116.213466513228,3148.9469698364337,1571,True,,0.05934560000241618
+map_0008,training,True,False,POLIMI_2023,1800,5,1.2,0.0,max_dTdt,constant_volume,completed,7.991977015071424e-05,3111.314433448451,3152.02409917364,1906,True,,0.06962330000169459
+map_0009,training,True,False,POLIMI_2023,1400,20,1.3,0.2,max_dTdt,constant_volume,completed,2.752180638113176e-05,3056.9697889610998,3056.9697889952267,1948,True,,0.07530390000101761
+map_0010,training,True,False,POLIMI_2023,1800,20,0.9,0.0,max_dTdt,constant_volume,completed,2.3619284509018834e-05,3195.0068043567817,3195.0068044330105,1861,True,,0.07574509999903967
+map_0011,training,True,False,POLIMI_2023,1400,5,0.8,0.1,max_dTdt,constant_volume,completed,0.00014734812723475864,2874.8499477317173,2874.849947742098,2125,True,,0.08855700000276556
+map_0012,training,True,False,POLIMI_2023,1800,5,0.8,0.3,max_dTdt,constant_volume,completed,6.294863794491671e-06,3053.0715369449176,3053.071536977087,1448,True,,0.06069339999885415

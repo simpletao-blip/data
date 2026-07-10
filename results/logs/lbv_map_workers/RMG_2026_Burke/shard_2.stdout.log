@@ -1,0 +1,10 @@
+map_0075 failed 600.03s
+map_0111 failed 600.04s
+map_0123 completed 61.84s
+map_0129 completed 281.53s
+map_0135 completed 32.02s
+map_0141 completed 34.18s
+status
+completed    22
+failed        2
+results\raw\lbv_map_worker_shards\RMG_2026_Burke\shard_2.csv

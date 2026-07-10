@@ -1,0 +1,9 @@
+returncode=0
+runtime_s=260.992391
+--- stdout ---
+lbv_0025 ok 259.57s
+status
+completed    1
+results\logs\lbv_case_workspace\RMG_2026_Burke\lbv_0025_result.csv
+
+--- stderr ---

@@ -1,0 +1,2 @@
+design_id,design_role,temperature_K,pressure_bar,equivalence_ratio,cracking_ratio,inside_experimental_convex_hull
+map_0094,training,450,5,0.6,0.5,False

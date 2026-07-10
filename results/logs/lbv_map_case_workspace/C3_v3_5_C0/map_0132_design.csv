@@ -1,0 +1,2 @@
+design_id,design_role,temperature_K,pressure_bar,equivalence_ratio,cracking_ratio,inside_experimental_convex_hull
+map_0132,interpolation_holdout,450,1,0.9,0.0,True

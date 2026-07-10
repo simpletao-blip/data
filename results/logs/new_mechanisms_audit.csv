@@ -1,0 +1,37 @@
+mechanism_file,sha256,status,warning_count,warnings,error,path,phase,species_count,reaction_count,duplicate_equation_count,transport_model,multicomponent_transport_available,nonfinite_forward_rate_count,negative_forward_rate_count,declared_negative_A_count,negative_equation_aggregate_count,benchmark_composition,elements
+mechanisms\raw\MEI_2019\MEI_2019.yaml,691344435fc589ca3594821efe80c51e3b873285e9d337eab2e205e481031c1f,passed,0,,,mechanisms\raw\MEI_2019\MEI_2019.yaml,gas,38.0,265.0,11.0,multicomponent,True,0.0,1.0,1.0,0.0,"(('NH3', 1.0), ('H2', 0.5), ('O2', 1.25), ('N2', 4.7))","('O', 'H', 'N', 'C', 'Ar', 'He')"
+mechanisms\raw\C3_v3_5_C0\C3-v3.5_C0.yaml,56f2f2f7bc3e16ce2de9fb860fb5b686223560357c8b255651b274d11ae4797f,passed,0,,,mechanisms\raw\C3_v3_5_C0\C3-v3.5_C0.yaml,gas,32.0,233.0,13.0,multicomponent,True,0.0,0.0,0.0,0.0,"(('NH3', 1.0), ('H2', 0.5), ('O2', 1.25), ('N2', 4.7))","('Ar', 'N', 'He', 'H', 'O')"
+C:\Users\30962\Documents\cantera\mechanisms\raw\RMG_2026\NH3_PCCP_SI_revision_Feb11\documents\mechanism files\chem_2025Dec14.yaml,7b3096d4e322dfad914d40438c8ec6b3a62a32c9251ea0868942905c21d53486,passed,0,,,C:\Users\30962\Documents\cantera\mechanisms\raw\RMG_2026\NH3_PCCP_SI_revision_Feb11\documents\mechanism files\chem_2025Dec14.yaml,gas,53.0,733.0,27.0,multicomponent,True,0.0,0.0,0.0,0.0,"(('Ar', 1.0),)","('H', 'D', 'T', 'C', 'Ci', 'O', 'Oi', 'N', 'Ne', 'Ar', 'He', 'Si', 'S', 'F', 'Cl', 'Br', 'I', 'X')"
+C:\Users\30962\Documents\cantera\mechanisms\raw\RMG_2026\NH3_PCCP_SI_revision_Feb11\documents\mechanism files\chem_annotated_2025Dec14.yaml,2fbc3f326baf3d7ca6a1b39463a50bb5afb8cb0fc6074df0e79e54e9e4ebf650,failed,0,,"CanteraError: 
+*******************************************************************************
+CanteraError thrown by addReactions:
+
+*******************************************************************************
+InputFileError thrown by PlogRate::validate:
+Error on line 4446 of C:\Users\30962\Documents\cantera\mechanisms\raw\RMG_2026\NH3_PCCP_SI_revision_Feb11\documents\mechanism files\chem_annotated_2025Dec14.yaml:
+
+Invalid rate coefficient for reaction 'NH2OO(35) <=> H2NO(17) + O(28)'
+at P = 1e+06, T = 300.0
+at P = 1e+07, T = 300.0
+at P = 1e+07, T = 500.0
+at P = 1e+07, T = 10000.0
+
+To fix this error, remove this reaction or contact the author of the
+reaction/mechanism in question, because the rate expression is
+mathematically unsound at the temperatures and pressures noted above.
+
+|  Line |
+|  4441 |   - {P: 98.692327 atm, A: 2.261e+29, b: -6.066, Ea: 11.141}
+|  4442 |   note: |
+|  4443 |     Reaction index: Chemkin #452; RMG #72
+|  4444 |     Library reaction: Doner2024
+|  4445 |     Flux pairs: NH2OO(35), O2(3); NH2OO(35), NH2(8); 
+>  4446 > - equation: NH2OO(35) <=> O(28) + H2NO(17)  # Reaction 453
+            ^
+|  4447 |   type: pressure-dependent-Arrhenius
+|  4448 |   rate-constants:
+|  4449 |   - {P: 0.009869 atm, A: 1.445e-22, b: 5.881, Ea: 184.599}
+*******************************************************************************
+*******************************************************************************
+",,,,,,,,,,,,,
+C:\Users\30962\Documents\cantera\mechanisms\raw\RMG_2026\NH3_PCCP_SI_revision_Feb11\documents\mechanism files\chem_linear_Burke_2025Dec14.yaml,15bbc779feb7217485160d4996eb476722b2b1a69d515dd004bb99a9e258255f,passed_with_warnings,1,Kinetics::kineticsSpeciesIndex: 'raise' argument not specified. Default behavior will change from returning npos to throwing an exception after Cantera 3.2.,,C:\Users\30962\Documents\cantera\mechanisms\raw\RMG_2026\NH3_PCCP_SI_revision_Feb11\documents\mechanism files\chem_linear_Burke_2025Dec14.yaml,gas,53.0,733.0,27.0,multicomponent,True,0.0,0.0,0.0,0.0,"(('Ar', 1.0),)","('H', 'D', 'T', 'C', 'Ci', 'O', 'Oi', 'N', 'Ne', 'Ar', 'He', 'Si', 'S', 'F', 'Cl', 'Br', 'I', 'X')"

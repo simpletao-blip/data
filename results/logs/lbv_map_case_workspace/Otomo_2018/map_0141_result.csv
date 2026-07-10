@@ -1,0 +1,2 @@
+design_id,design_role,inside_experimental_convex_hull,mechanism_id,temperature_K,pressure_bar,equivalence_ratio,cracking_ratio,status,laminar_burning_velocity_m_per_s,max_temperature_K,grid_points,transport_model,soret_enabled,failure_reason,runtime_s
+map_0141,interpolation_holdout,False,Otomo_2018,750,5,0.6,0.7,completed,1.8452942695858203,2011.0650981780966,182,multicomponent,True,,7.855003999999099

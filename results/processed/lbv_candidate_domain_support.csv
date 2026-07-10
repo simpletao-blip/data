@@ -1,0 +1,4 @@
+design_id,pressure_bar,equivalence_ratio,cracking_ratio,reference_mixture_class,reference_points,reference_campaigns,inside_air_like_4d_hull,nearest_extended_distance,third_nearest_extended_distance,fifth_nearest_extended_distance,neighbors_within_0_5,loso_hull_pass_count,loso_hull_fold_count,loso_hull_pass_fraction,loso_hull_failed_campaigns
+screen_0030,5,0.9,0.4,air_like_only,1289,14,True,0.16355484913111376,0.19500731891051953,0.19500731891051953,117,13,14,0.9285714285714286,campaign_7a82b8df233e
+screen_0039,5,1.0,0.5,air_like_only,1289,14,True,0.23570585449206038,0.24866160531570483,0.25525319908159144,81,13,14,0.9285714285714286,campaign_7a82b8df233e
+screen_0046,5,1.1,0.4,air_like_only,1289,14,True,0.11565161499705502,0.1810666379457064,0.18873947050011786,125,13,14,0.9285714285714286,campaign_7a82b8df233e

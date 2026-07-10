@@ -1,0 +1,9 @@
+file,row_count,duplicate_design_ids,missing_design_ids,unknown_design_ids,condition_mismatches,noncompleted_rows,passed
+C:\Users\30962\Documents\cantera\results\raw\C3_v3_5_C0_reactor_screening.csv,432,0,0,0,0,0,True
+C:\Users\30962\Documents\cantera\results\raw\Konnov_2026_reactor_screening.csv,432,0,0,0,0,0,True
+C:\Users\30962\Documents\cantera\results\raw\MEI_2019_reactor_screening.csv,432,0,0,0,0,0,True
+C:\Users\30962\Documents\cantera\results\raw\MEI_2021_reactor_screening.csv,432,0,0,0,0,0,True
+C:\Users\30962\Documents\cantera\results\raw\NUIG_2024_reactor_screening.csv,432,0,0,0,0,0,True
+C:\Users\30962\Documents\cantera\results\raw\Otomo_2018_reactor_screening.csv,432,0,0,0,0,0,True
+C:\Users\30962\Documents\cantera\results\raw\POLIMI_2023_reactor_screening.csv,432,0,0,0,0,0,True
+C:\Users\30962\Documents\cantera\results\raw\RMG_2026_Burke_reactor_screening.csv,432,0,0,0,0,0,True

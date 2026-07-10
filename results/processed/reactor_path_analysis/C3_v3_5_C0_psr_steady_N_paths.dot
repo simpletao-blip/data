@@ -1,0 +1,52 @@
+digraph reaction_paths {
+center=1;
+s12 -> s13[fontname="Helvetica", penwidth=6, arrowsize=3, color="0.7, 1.5, 0.9"
+, label=" 1"];
+s13 -> s14[fontname="Helvetica", penwidth=5.81, arrowsize=2.91, color="0.7, 1.31, 0.9"
+, label=" 0.806"];
+s13 -> s24[fontname="Helvetica", penwidth=3.78, arrowsize=1.89, color="0.7, 0.577, 0.9"
+, label=" 0.0775"];
+s13 -> s16[fontname="Helvetica", penwidth=3.69, arrowsize=1.85, color="0.7, 0.57, 0.9"
+, label=" 0.0702"];
+s13 -> s1[fontname="Helvetica", penwidth=3, arrowsize=1.5, color="0.7, 0.532, 0.9"
+, label=" 0.0318"];
+s14 -> s15[fontname="Helvetica", penwidth=4.74, arrowsize=2.37, color="0.7, 0.733, 0.9"
+, label=" 0.233"];
+s14 -> s24[fontname="Helvetica", penwidth=4.96, arrowsize=2.48, color="0.7, 0.802, 0.9"
+, label=" 0.302"];
+s14 -> s11[fontname="Helvetica", penwidth=3.2, arrowsize=1.6, color="0.7, 0.54, 0.9"
+, label=" 0.0398"];
+s14 -> s16[fontname="Helvetica", penwidth=2.43, arrowsize=1.21, color="0.7, 0.516, 0.9"
+, label=" 0.0164"];
+s14 -> s1[fontname="Helvetica", penwidth=3.67, arrowsize=1.83, color="0.7, 0.568, 0.9"
+, label=" 0.0681"];
+s14 -> s31[fontname="Helvetica", penwidth=4.32, arrowsize=2.16, color="0.7, 0.644, 0.9"
+, label=" 0.144"];
+s15 -> s11[fontname="Helvetica", penwidth=3.94, arrowsize=1.97, color="0.7, 0.594, 0.9"
+, label=" 0.0939"];
+s15 -> s1[fontname="Helvetica", penwidth=4.29, arrowsize=2.14, color="0.7, 0.639, 0.9"
+, label=" 0.139"];
+s24 -> s11[fontname="Helvetica", penwidth=5.17, arrowsize=2.59, color="0.7, 0.886, 0.9"
+, label=" 0.386"];
+s11 -> s16[fontname="Helvetica", penwidth=3.88, arrowsize=1.94, color="0.7, 0.587, 0.9"
+, label=" 0.0866"];
+s11 -> s1[fontname="Helvetica", penwidth=4.75, arrowsize=2.37, color="0.7, 0.736, 0.9"
+, label=" 0.236"];
+s11 -> s31[fontname="Helvetica", penwidth=4.31, arrowsize=2.16, color="0.7, 0.643, 0.9"
+, label=" 0.143"];
+s16 -> s1[fontname="Helvetica", penwidth=4.52, arrowsize=2.26, color="0.7, 0.681, 0.9"
+, label=" 0.181"];
+s31 -> s1[fontname="Helvetica", penwidth=4.91, arrowsize=2.45, color="0.7, 0.784, 0.9"
+, label=" 0.284"];
+s1 [ fontname="Helvetica", label="N2"];
+s11 [ fontname="Helvetica", label="NO"];
+s12 [ fontname="Helvetica", label="NH3"];
+s13 [ fontname="Helvetica", label="NH2"];
+s14 [ fontname="Helvetica", label="NH"];
+s15 [ fontname="Helvetica", label="N"];
+s16 [ fontname="Helvetica", label="NNH"];
+s24 [ fontname="Helvetica", label="HNO"];
+s31 [ fontname="Helvetica", label="N2O"];
+ label = "Scale = 0.64\l C3_v3_5_C0: psr_steady nitrogen paths";
+ fontname = "Helvetica";
+}

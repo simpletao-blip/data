@@ -1,0 +1,11 @@
+metric,value
+public_records,5011.0
+campaigns,38.0
+stacking_MARE_percent,15.455827994616689
+best_single_MARE_percent,15.092826197953341
+screened_conditions,432.0
+strict_supported_pareto,0.0
+proxy_supported_pareto,3.0
+dispersion_metric_invariant_points,1.0
+all_stress_invariant_points,0.0
+exploratory_extrapolative_pareto,64.0

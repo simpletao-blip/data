@@ -1,0 +1,10 @@
+mechanism_subset,normalized_range,iqr_relative,max_median_ratio,log_span,gp_mean_normalized_range
+all,3,2,2,3,3
+drop_C3_v3_5_C0,3,0,1,3,3
+drop_Konnov_2026,3,1,2,3,3
+drop_MEI_2019,3,0,2,3,3
+drop_MEI_2021,3,1,2,3,3
+drop_NUIG_2024,3,1,2,3,3
+drop_Otomo_2018,3,0,2,3,3
+drop_POLIMI_2023,3,1,2,3,3
+drop_RMG_2026_Burke,3,1,2,3,3

@@ -1,0 +1,38 @@
+digraph reaction_paths {
+center=1;
+s2 -> s3[fontname="Helvetica", penwidth=3.96, arrowsize=1.98, color="0.7, 0.596, 0.9"
+, label=" 0.0957"];
+s2 -> s4[fontname="Helvetica", penwidth=6, arrowsize=3, color="0.7, 1.5, 0.9"
+, label=" 1"];
+s2 -> s17[fontname="Helvetica", penwidth=3.2, arrowsize=1.6, color="0.7, 0.54, 0.9"
+, label=" 0.0399"];
+s2 -> s18[fontname="Helvetica", penwidth=5.55, arrowsize=2.77, color="0.7, 1.09, 0.9"
+, label=" 0.595"];
+s2 -> s25[fontname="Helvetica", penwidth=4.23, arrowsize=2.12, color="0.7, 0.631, 0.9"
+, label=" 0.131"];
+s2 -> s23[fontname="Helvetica", penwidth=2.4, arrowsize=1.2, color="0.7, 0.516, 0.9"
+, label=" 0.0159"];
+s3 -> s4[fontname="Helvetica", penwidth=4.41, arrowsize=2.21, color="0.7, 0.661, 0.9"
+, label=" 0.161"];
+s17 -> s3[fontname="Helvetica", penwidth=3.64, arrowsize=1.82, color="0.7, 0.566, 0.9"
+, label=" 0.0658"];
+s17 -> s4[fontname="Helvetica", penwidth=2.64, arrowsize=1.32, color="0.7, 0.521, 0.9"
+, label=" 0.0209"];
+s18 -> s4[fontname="Helvetica", penwidth=5.98, arrowsize=2.99, color="0.7, 1.48, 0.9"
+, label=" 0.976"];
+s23 -> s4[fontname="Helvetica", penwidth=3.04, arrowsize=1.52, color="0.7, 0.533, 0.9"
+, label=" 0.033"];
+s17 -> s18[fontname="Helvetica", penwidth=3.67, arrowsize=1.84, color="0.7, 0.569, 0.9"
+, label=" 0.0687"];
+s25 -> s17[fontname="Helvetica", penwidth=4.19, arrowsize=2.1, color="0.7, 0.625, 0.9"
+, label=" 0.125"];
+s2 [ fontname="Helvetica", label="NO"];
+s3 [ fontname="Helvetica", label="N2O"];
+s4 [ fontname="Helvetica", label="N2"];
+s17 [ fontname="Helvetica", label="NH"];
+s18 [ fontname="Helvetica", label="N"];
+s23 [ fontname="Helvetica", label="NNH"];
+s25 [ fontname="Helvetica", label="HNO"];
+ label = "Scale = 0.0026\l NUIG_2024: pfr_outlet nitrogen paths";
+ fontname = "Helvetica";
+}

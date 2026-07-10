@@ -1,0 +1,2 @@
+design_id,design_role,inside_experimental_convex_hull,mechanism_id,temperature_K,pressure_bar,equivalence_ratio,cracking_ratio,status,laminar_burning_velocity_m_per_s,max_temperature_K,grid_points,transport_model,soret_enabled,failure_reason,runtime_s
+map_0106,training,False,MEI_2021,300,5,0.6,0.2,completed,0.013055676010914534,1616.3540427853006,200,multicomponent,True,,94.36744040000121

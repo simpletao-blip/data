@@ -1,0 +1,2 @@
+mechanism_file,sha256,status,warning_count,warnings,error,path,phase,species_count,reaction_count,duplicate_equation_count,transport_model,multicomponent_transport_available,nonfinite_forward_rate_count,negative_forward_rate_count,declared_negative_A_count,negative_equation_aggregate_count,elements
+mechanisms\converted\UCSD_2018.yaml,1ca721f2029f69895558f0ed07f6548bcc04865941c8f5c7cefd24152d85c097,passed,0,,,mechanisms\converted\UCSD_2018.yaml,gas,20,41,1,multicomponent,True,0,0,0,0,"('H', 'O', 'N', 'Ar')"

@@ -1,0 +1,108 @@
+C:\Users\30962\Documents\cantera\scripts\run_lbv_validation.py:30: UserWarning: Kinetics::checkDuplicates: 
+*******************************************************************************
+InputFileError thrown by Kinetics::checkDuplicates:
+Error on lines 789 and 984 of ./mechanisms\converted\Konnov_2026.yaml:
+Undeclared duplicate third body reactions with a common third body detected.
+Add the field 'explicit-third-body-duplicates: mark-duplicate' or
+'explicit-third-body-duplicates: modify-efficiency' to the YAML phase entry
+to choose how these reactions should be handled and suppress this warning.
+Reaction 1: 2 H + O2 <=> H2 + O2
+Reaction 74: 2 H + M <=> H2 + M
+
+|  Line |
+|   784 |     diameter: 3.61
+|   785 |     polarizability: 1.756
+|   786 |     rotational-relaxation: 4.0
+|   787 | 
+|   788 | reactions:
+>   789 > - equation: H + H + M <=> H2 + M  # Reaction 1
+            ^
+|   790 |   type: three-body
+|   791 |   rate-constant: {A: 7.0e+17, b: -1.0, Ea: 0.0}
+|   792 |   efficiencies: {H2: 0.0, N2: 0.0, H: 0.0, H2O: 14.3}
+...
+|   979 |     OH*+H2O=H2O2+H                              2.960E+12          0.5              -861.0   
+|   980 | - equation: OH* + NH3 <=> OH + NH3  # Reaction 72
+|   981 |   rate-constant: {A: 1.17e+10, b: 1.4, Ea: -1500.0}
+|   982 | - equation: OH* => OH  # Reaction 73
+|   983 |   rate-constant: {A: 1.4e+06, b: 0.0, Ea: 0.0}
+>   984 > - equation: H + O2 + H <=> H2 + O2  # Reaction 74
+            ^
+|   985 |   rate-constant: {A: 8.8e+22, b: -1.835, Ea: 800.0}
+|   986 | - equation: H + O2 + H <=> OH + OH  # Reaction 75
+|   987 |   rate-constant: {A: 4.0e+22, b: -1.835, Ea: 800.0}
+*******************************************************************************
+
+  gas = ct.Solution(str(args.mechanism))
+C:\Users\30962\Documents\cantera\scripts\run_lbv_validation.py:30: UserWarning: Kinetics::checkDuplicates: 
+*******************************************************************************
+InputFileError thrown by Kinetics::checkDuplicates:
+Error on lines 805 and 988 of ./mechanisms\converted\Konnov_2026.yaml:
+Undeclared duplicate third body reactions with a common third body detected.
+Add the field 'explicit-third-body-duplicates: mark-duplicate' or
+'explicit-third-body-duplicates: modify-efficiency' to the YAML phase entry
+to choose how these reactions should be handled and suppress this warning.
+Reaction 6: H + O + O2 <=> OH + O2
+Reaction 76: H + O + M <=> OH + M
+
+|  Line |
+|   800 |   rate-constant: {A: 3.2e+15, b: 0.0, Ea: 0.0}
+|   801 | - equation: O + O + M <=> O2 + M  # Reaction 5
+|   802 |   type: three-body
+|   803 |   rate-constant: {A: 1.0e+17, b: -1.0, Ea: 0.0}
+|   804 |   efficiencies: {O: 28.8, O2: 8.0, N2: 2.0, H2O: 5.0, NO: 2.0, N: 2.0}
+>   805 > - equation: O + H + M <=> OH + M  # Reaction 6
+            ^
+|   806 |   type: three-body
+|   807 |   rate-constant: {A: 6.75e+18, b: -1.0, Ea: 0.0}
+|   808 |   efficiencies: {H2O: 5.0}
+...
+|   983 |   rate-constant: {A: 1.4e+06, b: 0.0, Ea: 0.0}
+|   984 | - equation: H + O2 + H <=> H2 + O2  # Reaction 74
+|   985 |   rate-constant: {A: 8.8e+22, b: -1.835, Ea: 800.0}
+|   986 | - equation: H + O2 + H <=> OH + OH  # Reaction 75
+|   987 |   rate-constant: {A: 4.0e+22, b: -1.835, Ea: 800.0}
+>   988 > - equation: H + O2 + O <=> OH + O2  # Reaction 76
+            ^
+|   989 |   rate-constant: {A: 7.35e+22, b: -1.835, Ea: 800.0}
+|   990 | - equation: H + O2 + OH <=> H2O + O2  # Reaction 77
+|   991 |   rate-constant: {A: 2.56e+22, b: -1.835, Ea: 800.0}
+*******************************************************************************
+
+  gas = ct.Solution(str(args.mechanism))
+C:\Users\30962\Documents\cantera\scripts\run_lbv_validation.py:30: UserWarning: Kinetics::checkDuplicates: 
+*******************************************************************************
+InputFileError thrown by Kinetics::checkDuplicates:
+Error on lines 809 and 990 of ./mechanisms\converted\Konnov_2026.yaml:
+Undeclared duplicate third body reactions with a common third body detected.
+Add the field 'explicit-third-body-duplicates: mark-duplicate' or
+'explicit-third-body-duplicates: modify-efficiency' to the YAML phase entry
+to choose how these reactions should be handled and suppress this warning.
+Reaction 7: H + OH + O2 <=> H2O + O2
+Reaction 77: H2O + M <=> H + OH + M
+
+|  Line |
+|   804 |   efficiencies: {O: 28.8, O2: 8.0, N2: 2.0, H2O: 5.0, NO: 2.0, N: 2.0}
+|   805 | - equation: O + H + M <=> OH + M  # Reaction 6
+|   806 |   type: three-body
+|   807 |   rate-constant: {A: 6.75e+18, b: -1.0, Ea: 0.0}
+|   808 |   efficiencies: {H2O: 5.0}
+>   809 > - equation: H2O + M <=> H + OH + M  # Reaction 7
+            ^
+|   810 |   type: three-body
+|   811 |   rate-constant: {A: 6.06e+27, b: -3.312, Ea: 1.2077e+05}
+|   812 |   efficiencies: {H2O: 0.0, H2: 3.0, N2: 2.0, O2: 1.5, HE: 1.1}
+...
+|   985 |   rate-constant: {A: 8.8e+22, b: -1.835, Ea: 800.0}
+|   986 | - equation: H + O2 + H <=> OH + OH  # Reaction 75
+|   987 |   rate-constant: {A: 4.0e+22, b: -1.835, Ea: 800.0}
+|   988 | - equation: H + O2 + O <=> OH + O2  # Reaction 76
+|   989 |   rate-constant: {A: 7.35e+22, b: -1.835, Ea: 800.0}
+>   990 > - equation: H + O2 + OH <=> H2O + O2  # Reaction 77
+            ^
+|   991 |   rate-constant: {A: 2.56e+22, b: -1.835, Ea: 800.0}
+|   992 | - equation: N + OH <=> NO + H  # Reaction 78
+|   993 |   rate-constant: {A: 1.33e+14, b: -0.25, Ea: 0.0}
+*******************************************************************************
+
+  gas = ct.Solution(str(args.mechanism))

@@ -1,0 +1,3 @@
+design_id,design_role,temperature_K,pressure_bar,equivalence_ratio,cracking_ratio,inside_experimental_convex_hull
+screen_0038,direct_pareto_confirmation,300.0,5,1.0,0.4,True
+screen_0039,direct_pareto_confirmation,300.0,5,1.0,0.5,True

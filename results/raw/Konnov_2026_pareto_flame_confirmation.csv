@@ -1,0 +1,3 @@
+design_id,design_role,inside_experimental_convex_hull,mechanism_id,temperature_K,pressure_bar,equivalence_ratio,cracking_ratio,status,laminar_burning_velocity_m_per_s,max_temperature_K,grid_points,transport_model,soret_enabled,failure_reason,runtime_s
+screen_0038,direct_pareto_confirmation,True,Konnov_2026,300.0,5,1.0,0.4,completed,0.14585381686840238,2145.1639237807344,207,multicomponent,True,,41.12594820000231
+screen_0039,direct_pareto_confirmation,True,Konnov_2026,300.0,5,1.0,0.5,completed,0.21061028559639855,2159.9885940331956,207,multicomponent,True,,38.33737769999789

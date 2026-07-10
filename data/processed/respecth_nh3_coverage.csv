@@ -1,0 +1,22 @@
+experiment_type,observable,rows,campaigns,sources,min_T_K,max_T_K,min_P_Pa,max_P_Pa,min_alpha,max_alpha
+concentration time profile measurement,NH3,12,1,2,1279.0,1279.0,120000.0,120000.0,0.0,0.0
+concentration time profile measurement,NO,12,1,2,1279.0,1279.0,120000.0,120000.0,0.0,0.0
+ignition delay measurement,ignition delay,313,5,36,1022.7,2586.37,25331.25,4220000.0,0.0,0.6086956521739131
+jet stirred reactor measurement,CO,46,1,8,900.0,1350.0,101325.0,101325.0,0.7692307692307693,0.7692307692307693
+jet stirred reactor measurement,H2,311,4,20,800.0,1350.0,101325.0,121590.0,0.0,0.7692307692307693
+jet stirred reactor measurement,H2O,209,3,18,800.0,1452.0,101325.0,101325.0,0.0,0.6086956521739131
+jet stirred reactor measurement,N2,101,2,6,800.0,1313.0,101325.0,121590.0,0.0,0.22219341457091002
+jet stirred reactor measurement,N2O,154,3,19,800.0,1452.0,101325.0,101325.0,0.0,0.7692307692307693
+jet stirred reactor measurement,NH3,232,4,20,500.0,1452.0,101325.0,106657.8947368421,0.0,0.6086956521739131
+jet stirred reactor measurement,NO,406,6,33,800.0,1452.0,101325.0,121590.0,0.0,0.7692307692307693
+jet stirred reactor measurement,NO2,30,2,3,900.0,1452.0,101325.0,106657.8947368421,0.0,0.0
+jet stirred reactor measurement,O2,335,4,21,800.0,1350.0,101325.0,121590.0,0.0,0.7692307692307693
+laminar burning velocity measurement,laminar burning velocity,1731,20,209,297.95,476.0,50662.5,1013250.0,0.0,1.0
+outlet concentration measurement,H2,150,2,10,875.0,1973.0,101325.0,126656.25,0.0,0.0
+outlet concentration measurement,H2O,19,1,1,1073.0,1973.0,126656.25,126656.25,0.0,0.0
+outlet concentration measurement,N2,19,1,1,1073.0,1973.0,126656.25,126656.25,0.0,0.0
+outlet concentration measurement,N2O,190,4,16,453.0,1475.0,101325.0,10000000.0,0.0,0.0
+outlet concentration measurement,NH3,232,6,20,451.0,1973.0,101325.0,10000000.0,0.0,0.47311827956989244
+outlet concentration measurement,NO,215,5,16,798.0,1973.0,101325.0,126656.25,0.0,0.47311827956989244
+outlet concentration measurement,NO2,131,1,9,875.0,1475.0,101325.0,101325.0,0.0,0.0
+outlet concentration measurement,O2,163,3,12,451.0,1973.0,101325.0,10000000.0,0.0,0.0

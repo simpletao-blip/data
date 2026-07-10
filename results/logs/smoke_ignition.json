@@ -1,0 +1,39 @@
+{
+  "warning": "Smoke-test output only; not experimental or publication evidence.",
+  "mechanism_id": "alzueta_2023_cantera_example",
+  "mechanism_audit": {
+    "path": "example_data/ammonia-CO-H2-Alzueta-2023.yaml",
+    "phase": "baseline",
+    "species_count": 42,
+    "reaction_count": 281,
+    "duplicate_equation_count": 13,
+    "transport_model": "multicomponent",
+    "multicomponent_transport_available": true,
+    "finite_forward_rates": false,
+    "elements": [
+      "O",
+      "H",
+      "C",
+      "N",
+      "He",
+      "Ar"
+    ]
+  },
+  "case": {
+    "cracking_ratio": 0.3,
+    "equivalence_ratio": 1.0,
+    "temperature_K": 1200.0,
+    "pressure_bar": 10.0,
+    "max_time_s": 0.5
+  },
+  "result": {
+    "ignition_delay_s": 0.00016923544708084677,
+    "criterion": "max_dTdt",
+    "reactor": "constant_volume",
+    "final_temperature_K": 2968.8285097199782,
+    "max_temperature_K": 2968.8285097613198,
+    "integration_steps": 2334,
+    "converged": true,
+    "failure_reason": ""
+  }
+}

@@ -1,0 +1,11 @@
+returncode=timeout
+runtime_s=300.036326
+--- stdout ---
+
+--- stderr ---
+C:\Users\30962\Documents\cantera\scripts\run_lbv_validation.py:30: UserWarning: NasaPoly2::validate: 
+For species HOCHO, discontinuity in h/RT detected at Tmid = 1000
+	Value computed using low-temperature polynomial:  -40.36035916666667
+	Value computed using high-temperature polynomial: -38.16786118416666
+
+  gas = ct.Solution(str(args.mechanism))

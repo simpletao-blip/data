@@ -1,0 +1,2 @@
+mechanism_id,n_attempted,n_campaigns,n_completed,n_timeout,completion_fraction,mean_relative_error_completed,median_relative_error_completed,mean_runtime_s_completed,per_case_timeout_s,decision
+Shrestha_2018,21,5,3,18,0.142857,0.248978,0.307829,212.973981,300,exclude_from_lbv_stacking

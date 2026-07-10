@@ -1,0 +1,9 @@
+returncode=0
+runtime_s=21.516241
+--- stdout ---
+map_0139 completed 20.29s
+status
+completed    1
+results\logs\lbv_map_case_workspace\C3_v3_5_C0\map_0139_result.csv
+
+--- stderr ---

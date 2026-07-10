@@ -1,0 +1,10 @@
+case,temperature_K,pressure_bar,equivalence_ratio,cracking_ratio,grid,width_m,refine,mechanism_id,laminar_burning_velocity_m_per_s,max_temperature_K,grid_points,transport_model,soret_enabled,converged,failure_reason,runtime_s,base_to_fine_relative_difference
+lean_low_crack,300.0,1.0,0.7,0.1,coarse,0.03,"{'ratio': 4.0, 'slope': 0.1, 'curve': 0.15}",POLIMI_2023,0.05763348290547796,1735.627960575536,105,multicomponent,True,True,,7.81471160000001,0.013199553599277755
+lean_low_crack,300.0,1.0,0.7,0.1,base,0.05,"{'ratio': 3.0, 'slope': 0.06, 'curve': 0.1}",POLIMI_2023,0.05723861260458525,1737.5505271193185,171,multicomponent,True,True,,9.78414359999806,0.013199553599277755
+lean_low_crack,300.0,1.0,0.7,0.1,fine,0.08,"{'ratio': 2.0, 'slope': 0.03, 'curve': 0.05}",POLIMI_2023,0.058004242715291254,1741.985123395712,313,multicomponent,True,True,,15.458288699999684,0.013199553599277755
+stoich_mid_crack,300.0,1.0,1.0,0.3,coarse,0.03,"{'ratio': 4.0, 'slope': 0.1, 'curve': 0.15}",POLIMI_2023,0.27795066383280087,2087.0343201258015,115,multicomponent,True,True,,3.306602600001497,0.01116691071139535
+stoich_mid_crack,300.0,1.0,1.0,0.3,base,0.05,"{'ratio': 3.0, 'slope': 0.06, 'curve': 0.1}",POLIMI_2023,0.28023342943845225,2095.2804042149287,162,multicomponent,True,True,,4.83521589999873,0.01116691071139535
+stoich_mid_crack,300.0,1.0,1.0,0.3,fine,0.08,"{'ratio': 2.0, 'slope': 0.03, 'curve': 0.05}",POLIMI_2023,0.28339811083795785,2100.695911642517,360,multicomponent,True,True,,8.031942800000252,0.01116691071139535
+rich_high_pressure,450.0,10.0,1.2,0.5,coarse,0.03,"{'ratio': 4.0, 'slope': 0.1, 'curve': 0.15}",POLIMI_2023,0.5211882613675999,2195.2675087286107,123,multicomponent,True,True,,5.60335070000292,2.8478162623012195e-05
+rich_high_pressure,450.0,10.0,1.2,0.5,base,0.05,"{'ratio': 3.0, 'slope': 0.06, 'curve': 0.1}",POLIMI_2023,0.5199802652365385,2200.6906170836837,200,multicomponent,True,True,,8.279359399999521,2.8478162623012195e-05
+rich_high_pressure,450.0,10.0,1.2,0.5,fine,0.08,"{'ratio': 2.0, 'slope': 0.03, 'curve': 0.05}",POLIMI_2023,0.5199950737408117,2199.1299492456565,363,multicomponent,True,True,,13.668477500003064,2.8478162623012195e-05

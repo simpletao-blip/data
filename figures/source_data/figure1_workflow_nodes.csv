@@ -1,0 +1,6 @@
+stage,title,description
+1,Evidence,Curated experiments and immutable mechanisms
+2,External validation,Whole-campaign outer folds
+3,Ensemble gate,Observable-specific non-negative stacking
+4,Cross-test screen,"Separate 0D, 1D and PSR-PFR tests"
+5,Stress tests,"Domain, metric and mechanism deletion"

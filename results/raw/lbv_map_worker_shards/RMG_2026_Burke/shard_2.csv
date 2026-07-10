@@ -1,0 +1,25 @@
+design_id,design_role,inside_experimental_convex_hull,mechanism_id,temperature_K,pressure_bar,equivalence_ratio,cracking_ratio,status,laminar_burning_velocity_m_per_s,max_temperature_K,grid_points,transport_model,soret_enabled,failure_reason,runtime_s
+map_0009,training,True,RMG_2026_Burke,450,1,0.9,0.5,completed,0.93168060274717,2143.1575565526136,196,multicomponent,True,,24.695647000000008
+map_0021,training,True,RMG_2026_Burke,300,10,1.2,0.3,completed,0.089713207282266,2052.765424590974,190,multicomponent,True,,127.7538857999998
+map_0033,training,True,RMG_2026_Burke,450,1,1.3,0.2,completed,0.3157838193768004,2055.979942932717,168,multicomponent,True,,34.22898209999994
+map_0045,training,True,RMG_2026_Burke,300,1,1.2,0.7,completed,0.9575563694534658,2080.857302260103,211,multicomponent,True,,99.34375050000016
+map_0057,training,True,RMG_2026_Burke,300,5,0.8,0.4,completed,0.1237995023260396,1922.5034862892785,205,multicomponent,True,,242.78107819999968
+map_0069,training,True,RMG_2026_Burke,300,5,1.0,0.05,completed,0.050121680879804,2091.493636502902,221,multicomponent,True,,374.63977090000026
+map_0081,training,False,RMG_2026_Burke,750,20,1.4,0.7,completed,1.9170410022322435,2384.8730647186044,198,multicomponent,True,,77.34154080000008
+map_0093,training,False,RMG_2026_Burke,750,5,1.4,0.4,completed,1.164003527662148,2281.5696678271515,179,multicomponent,True,,39.17588109999997
+map_0105,training,False,RMG_2026_Burke,600,5,1.4,0.7,completed,2.0347843620511306,2249.41377090318,213,multicomponent,True,,50.91786210000009
+map_0117,training,False,RMG_2026_Burke,750,10,1.2,0.2,completed,0.6013956935167698,2343.323513163626,195,multicomponent,True,,44.9108253000004
+map_0003,training,True,RMG_2026_Burke,300,10,1.4,0.1,completed,0.0367583964069589,1924.445618307428,178,multicomponent,True,,111.72427530000004
+map_0015,training,True,RMG_2026_Burke,300,5,1.0,0.2,completed,0.0834412796251279,2118.179472075532,211,multicomponent,True,,130.9905771000001
+map_0027,training,True,RMG_2026_Burke,450,1,0.8,0.3,completed,0.4092497862956859,1998.259072584523,184,multicomponent,True,,54.328318899999886
+map_0039,training,True,RMG_2026_Burke,450,5,0.9,0.0,completed,0.0875885209513827,2081.8963735651705,202,multicomponent,True,,113.19933900000024
+map_0051,training,True,RMG_2026_Burke,300,1,0.7,0.1,completed,0.0546873678271441,1738.5209025683632,184,multicomponent,True,,178.4250563999999
+map_0063,training,True,RMG_2026_Burke,300,5,1.2,0.3,completed,0.1261499457737318,2044.823901027964,184,multicomponent,True,,168.93691709999985
+map_0087,training,False,RMG_2026_Burke,450,1,0.6,0.3,completed,0.2361295364148671,1729.6430263690108,178,multicomponent,True,,65.20953570000074
+map_0099,training,False,RMG_2026_Burke,750,20,1.0,0.4,completed,0.7282984014881642,2467.5479467273017,201,multicomponent,True,,57.19588589999967
+map_0075,training,False,RMG_2026_Burke,300,20,1.4,0.0,failed,,,0,multicomponent,True,TimeoutError: exceeded 600 s,600.0
+map_0111,training,False,RMG_2026_Burke,300,20,1.0,0.0,failed,,,0,multicomponent,True,TimeoutError: exceeded 600 s,600.0
+map_0123,interpolation_holdout,True,RMG_2026_Burke,300,1,0.7,0.7,completed,0.4474108544246261,1805.496901830748,204,multicomponent,True,,60.67924570000014
+map_0129,interpolation_holdout,True,RMG_2026_Burke,300,1,0.6,0.05,completed,0.0220879997821396,1591.9177759700806,189,multicomponent,True,,280.50670379999974
+map_0135,interpolation_holdout,False,RMG_2026_Burke,750,1,0.6,0.05,completed,0.3478803036300733,1931.000384494416,166,multicomponent,True,,30.945927900000243
+map_0141,interpolation_holdout,False,RMG_2026_Burke,750,5,0.6,0.7,completed,1.8322868055268784,2018.1279309932304,171,multicomponent,True,,33.09841099999994

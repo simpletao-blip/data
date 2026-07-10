@@ -1,0 +1,9 @@
+returncode=0
+runtime_s=125.268814
+--- stdout ---
+map_0040 completed 124.06s
+status
+completed    1
+results\logs\lbv_map_case_workspace\RMG_2026_Burke\map_0040_result.csv
+
+--- stderr ---

@@ -1,0 +1,9 @@
+returncode=0
+runtime_s=11.138183
+--- stdout ---
+map_0089 completed 9.92s
+status
+completed    1
+results\logs\lbv_map_case_workspace\Otomo_2018\map_0089_result.csv
+
+--- stderr ---

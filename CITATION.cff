@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use these data or scripts, please cite the repository and associated manuscript."
+title: "Data and code for study-held-out validation of partially cracked ammonia mechanisms"
+version: 1.0.0
+date-released: 2026-07-10
+authors:
+  - family-names: Tang
+    given-names: Jiachao
+    orcid: "https://orcid.org/0009-0000-5472-5902"
+repository-code: "https://github.com/simpletao-blip/data"
+url: "https://github.com/simpletao-blip/data"
+keywords:
+  - ammonia combustion
+  - chemical kinetics
+  - model uncertainty
+  - Cantera
+  - cross-validation

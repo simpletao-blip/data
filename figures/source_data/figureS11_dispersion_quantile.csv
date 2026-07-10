@@ -1,0 +1,8 @@
+dispersion_quantile,selected_count,selected_ids
+0.5,1,screen_0030
+0.6,1,screen_0030
+0.7,1,screen_0030
+0.75,3,screen_0030;screen_0039;screen_0046
+0.8,3,screen_0030;screen_0039;screen_0046
+0.9,5,screen_0030;screen_0038;screen_0039;screen_0046;screen_0047
+1.0,8,screen_0030;screen_0037;screen_0038;screen_0039;screen_0045;screen_0046;screen_0047;screen_0054

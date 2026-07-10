@@ -1,0 +1,5 @@
+from_stage,to_stage,gate
+1,2,criterion + mechanism QA
+2,3,external residuals
+3,4,only if stacking beats baselines
+4,5,domain tags + solver status

@@ -1,0 +1,3 @@
+mechanism_id,n_legacy,n_staged,n_paired_completed,median_relative_difference,maximum_relative_difference
+POLIMI_2023,80,80,80,8.713776296185713e-06,0.0010561396029376733
+Konnov_2026,80,80,80,2.994297124028708e-05,0.0014314141060108177

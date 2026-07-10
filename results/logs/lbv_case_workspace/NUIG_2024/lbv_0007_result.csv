@@ -1,0 +1,2 @@
+design_id,dataset_id,campaign_id,doi,mechanism_id,experimental_m_per_s,temperature_K,pressure_Pa,equivalence_ratio,cracking_ratio,apparatus,status,simulated_m_per_s,relative_error,converged,failure_reason,grid_points,transport_model,soret_enabled,runtime_s
+lbv_0007,x20100007:gdg1:p2:laminar burning velocity,campaign_11f336e77db5,10.1016/j.ijhydene.2009.11.071,NUIG_2024,0.15,298.0,101325.0,0.6,0.4,outwardly propagating spherical flame; constant volume combustion chamber,completed,0.13756986223784454,0.0828675850810364,True,,175,multicomponent,True,35.104433300000096

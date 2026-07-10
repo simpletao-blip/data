@@ -1,0 +1,9 @@
+returncode=0
+runtime_s=19.081563
+--- stdout ---
+screen_0030 completed 18.07s
+status
+completed    1
+results\logs\lbv_map_case_workspace\Otomo_2018\screen_0030_result.csv
+
+--- stderr ---

@@ -1,0 +1,9 @@
+returncode=0
+runtime_s=17.085348
+--- stdout ---
+screen_0030 completed 16.05s
+status
+completed    1
+results\logs\lbv_map_case_workspace\POLIMI_2023\screen_0030_result.csv
+
+--- stderr ---

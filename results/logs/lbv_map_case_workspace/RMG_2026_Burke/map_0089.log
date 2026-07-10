@@ -1,0 +1,11 @@
+returncode=0
+runtime_s=47.162598
+--- stdout ---
+map_0089 completed 45.98s
+status
+completed    1
+results\logs\lbv_map_case_workspace\RMG_2026_Burke\map_0089_result.csv
+
+--- stderr ---
+C:\Users\30962\anaconda3\envs\cantera\Lib\site-packages\cantera\onedim.py:669: UserWarning: ChemEquil::equilibrate: Temperature (2508.3261114274765 K) outside valid range of 298 K to 2500 K
+  self.gas.equilibrate('HP')

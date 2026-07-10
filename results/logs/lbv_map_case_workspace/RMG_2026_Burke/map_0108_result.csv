@@ -1,0 +1,2 @@
+design_id,design_role,inside_experimental_convex_hull,mechanism_id,temperature_K,pressure_bar,equivalence_ratio,cracking_ratio,status,laminar_burning_velocity_m_per_s,max_temperature_K,grid_points,transport_model,soret_enabled,failure_reason,runtime_s
+map_0108,training,False,RMG_2026_Burke,450,1,1.4,0.7,completed,1.853342885182191,2091.750684516822,198,multicomponent,True,,35.15188990000024

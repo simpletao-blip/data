@@ -1,0 +1,9 @@
+mechanism_id,candidate_count,reused_count,missing_count,missing_design_file
+C3_v3_5_C0,3,2,1,results\processed\pareto_confirmation\C3_v3_5_C0_missing_design.csv
+Konnov_2026,3,2,1,results\processed\pareto_confirmation\Konnov_2026_missing_design.csv
+MEI_2019,3,2,1,results\processed\pareto_confirmation\MEI_2019_missing_design.csv
+MEI_2021,3,2,1,results\processed\pareto_confirmation\MEI_2021_missing_design.csv
+NUIG_2024,3,2,1,results\processed\pareto_confirmation\NUIG_2024_missing_design.csv
+Otomo_2018,3,2,1,results\processed\pareto_confirmation\Otomo_2018_missing_design.csv
+POLIMI_2023,3,2,1,results\processed\pareto_confirmation\POLIMI_2023_missing_design.csv
+RMG_2026_Burke,3,2,1,results\processed\pareto_confirmation\RMG_2026_Burke_missing_design.csv

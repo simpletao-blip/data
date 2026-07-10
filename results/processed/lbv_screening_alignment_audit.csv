@@ -1,0 +1,9 @@
+file,row_count,duplicate_design_ids,missing_design_ids,unknown_design_ids,condition_mismatches,noncompleted_rows,passed
+C:\Users\30962\Documents\cantera\results\processed\C3_v3_5_C0_lbv_screening.csv,432,0,0,0,0,0,True
+C:\Users\30962\Documents\cantera\results\processed\Konnov_2026_lbv_screening.csv,432,0,0,0,0,0,True
+C:\Users\30962\Documents\cantera\results\processed\MEI_2019_lbv_screening.csv,432,0,0,0,0,0,True
+C:\Users\30962\Documents\cantera\results\processed\MEI_2021_lbv_screening.csv,432,0,0,0,0,0,True
+C:\Users\30962\Documents\cantera\results\processed\NUIG_2024_lbv_screening.csv,432,0,0,0,0,0,True
+C:\Users\30962\Documents\cantera\results\processed\Otomo_2018_lbv_screening.csv,432,0,0,0,0,0,True
+C:\Users\30962\Documents\cantera\results\processed\POLIMI_2023_lbv_screening.csv,432,0,0,0,0,0,True
+C:\Users\30962\Documents\cantera\results\processed\RMG_2026_Burke_lbv_screening.csv,432,0,0,0,0,0,True

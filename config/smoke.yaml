@@ -1,0 +1,11 @@
+mechanism:
+  id: alzueta_2023_cantera_example
+  path: example_data/ammonia-CO-H2-Alzueta-2023.yaml
+  phase: baseline
+case:
+  cracking_ratio: 0.30
+  equivalence_ratio: 1.0
+  temperature_K: 1200.0
+  pressure_bar: 10.0
+  max_time_s: 0.5
+

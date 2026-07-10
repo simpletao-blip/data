@@ -1,0 +1,4 @@
+mechanism_id,criterion,n_total,n_completed,n_failed,value,decision
+UCSD_2018,LBV convergence,80,22,58,0.275,exclude_primary_1d_ensemble
+UCSD_2018,IDT exact-criterion mean absolute log10 error,46,43,3,0.842490,exclude_primary_idt_ensemble
+UCSD_2018,JSR condition coverage,48,40,8,0.833333,retain_only_as_screened_baseline

@@ -1,0 +1,5 @@
+mechanism_file,sha256,status,warning_count,warnings,error,path,phase,species_count,reaction_count,duplicate_equation_count,transport_model,multicomponent_transport_available,nonfinite_forward_rate_count,negative_forward_rate_count,declared_negative_A_count,negative_equation_aggregate_count,benchmark_composition,elements
+mechanisms\converted\Shrestha_2018.yaml,f3a4fde717b23df2841ef790187a89a72bd0ae07c8b466f46223af7afb5181d8,passed_with_warnings,1,"NasaPoly2::validate: 
+For species HOCHO, discontinuity in h/RT detected at Tmid = 1000
+	Value computed using low-temperature polynomial:  -40.36035916666667
+	Value computed using high-temperature polynomial: -38.16786118416666",,mechanisms\converted\Shrestha_2018.yaml,gas,124,1081,30,multicomponent,True,0,0,0,0,"(('NH3', 1.0), ('H2', 0.5), ('O2', 1.25), ('N2', 4.7))","('C', 'H', 'O', 'N', 'Ar', 'He')"

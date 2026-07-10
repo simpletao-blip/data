@@ -1,0 +1,52 @@
+digraph reaction_paths {
+center=1;
+s13 -> s1[fontname="Helvetica", penwidth=4.53, arrowsize=2.27, color="0.7, 0.685, 0.9"
+, label=" 0.185"];
+s22 -> s1[fontname="Helvetica", penwidth=4.81, arrowsize=2.41, color="0.7, 0.755, 0.9"
+, label=" 0.255"];
+s23 -> s1[fontname="Helvetica", penwidth=5.04, arrowsize=2.52, color="0.7, 0.829, 0.9"
+, label=" 0.329"];
+s14 -> s1[fontname="Helvetica", penwidth=3.06, arrowsize=1.53, color="0.7, 0.534, 0.9"
+, label=" 0.0337"];
+s15 -> s1[fontname="Helvetica", penwidth=3.2, arrowsize=1.6, color="0.7, 0.54, 0.9"
+, label=" 0.04"];
+s17 -> s1[fontname="Helvetica", penwidth=4.48, arrowsize=2.24, color="0.7, 0.673, 0.9"
+, label=" 0.173"];
+s13 -> s22[fontname="Helvetica", penwidth=4.38, arrowsize=2.19, color="0.7, 0.655, 0.9"
+, label=" 0.155"];
+s14 -> s13[fontname="Helvetica", penwidth=5.06, arrowsize=2.53, color="0.7, 0.84, 0.9"
+, label=" 0.34"];
+s22 -> s23[fontname="Helvetica", penwidth=4.74, arrowsize=2.37, color="0.7, 0.735, 0.9"
+, label=" 0.235"];
+s14 -> s22[fontname="Helvetica", penwidth=3.55, arrowsize=1.78, color="0.7, 0.56, 0.9"
+, label=" 0.0596"];
+s25 -> s22[fontname="Helvetica", penwidth=4.92, arrowsize=2.46, color="0.7, 0.787, 0.9"
+, label=" 0.287"];
+s22 -> s17[fontname="Helvetica", penwidth=3.81, arrowsize=1.91, color="0.7, 0.581, 0.9"
+, label=" 0.0806"];
+s14 -> s23[fontname="Helvetica", penwidth=4.74, arrowsize=2.37, color="0.7, 0.735, 0.9"
+, label=" 0.235"];
+s14 -> s25[fontname="Helvetica", penwidth=4.79, arrowsize=2.4, color="0.7, 0.749, 0.9"
+, label=" 0.249"];
+s15 -> s14[fontname="Helvetica", penwidth=5.92, arrowsize=2.96, color="0.7, 1.41, 0.9"
+, label=" 0.908"];
+s14 -> s17[fontname="Helvetica", penwidth=3.44, arrowsize=1.72, color="0.7, 0.553, 0.9"
+, label=" 0.0525"];
+s15 -> s25[fontname="Helvetica", penwidth=3.17, arrowsize=1.58, color="0.7, 0.538, 0.9"
+, label=" 0.0383"];
+s16 -> s15[fontname="Helvetica", penwidth=6, arrowsize=3, color="0.7, 1.5, 0.9"
+, label=" 1"];
+s15 -> s17[fontname="Helvetica", penwidth=2.9, arrowsize=1.45, color="0.7, 0.528, 0.9"
+, label=" 0.0281"];
+s1 [ fontname="Helvetica", label="N2"];
+s13 [ fontname="Helvetica", label="N"];
+s14 [ fontname="Helvetica", label="NH"];
+s15 [ fontname="Helvetica", label="NH2"];
+s16 [ fontname="Helvetica", label="NH3"];
+s17 [ fontname="Helvetica", label="NNH"];
+s22 [ fontname="Helvetica", label="NO"];
+s23 [ fontname="Helvetica", label="N2O"];
+s25 [ fontname="Helvetica", label="HNO"];
+ label = "Scale = 0.64\l MEI_2021: psr_steady nitrogen paths";
+ fontname = "Helvetica";
+}

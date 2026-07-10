@@ -1,0 +1,2 @@
+design_id,dataset_id,campaign_id,doi,mechanism_id,experimental_m_per_s,temperature_K,pressure_Pa,equivalence_ratio,cracking_ratio,apparatus,status,simulated_m_per_s,relative_error,converged,failure_reason,grid_points,transport_model,soret_enabled,runtime_s
+lbv_0012,x20100082:gdg1:p3:laminar burning velocity,campaign_16f8038c5740,10.1016/j.ijhydene.2021.09.188,MEI_2021,0.569,368.0,101325.0,0.9,0.2222216460901082,flame cone method; modified Bunsen burner,completed,0.5574875266239369,0.020232817884117914,True,,186,multicomponent,True,5.515243499999997
