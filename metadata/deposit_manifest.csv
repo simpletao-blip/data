@@ -1,6 +1,6 @@
 ﻿"relative_path","size_bytes","sha256"
 ".gitignore","109","cfedd82584fe3131b72565d213b1a5ede559773f9df5383f804799e292a87f30"
-"CITATION.cff","574","acb127d53fb1469b6e44f4e3074c60efa2f0f249a847976e687a7910b5f46f10"
+"CITATION.cff","574","77b02de498f6b6c938d7a5114c6b9675c18b4a9c2d776f0e5fb4d44bf9db46dd"
 "config/smoke.yaml","235","a49747fbec8a7b76969c52e9e531fc0126c40bbddb8d5142d9e98cbae699e071"
 "config/study.yaml","1254","1784b710289a5429e220141820e0ecdf3a5d697aee87b5f40b3d2d38fbcfdcec"
 "data/processed/idt_operating_design.csv","13985","59554173e5e56deefbf21aba80f58606d7b68304a84f1f82ade37206549516fb"
