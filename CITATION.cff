@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use these data or scripts, please cite the repository and associated manuscript."
 title: "Data and code for study-held-out validation of partially cracked ammonia mechanisms"
 version: 1.0.0
-date-released: 2026-07-10
+date-released: 2026-07-11
 authors:
   - family-names: Tang
     given-names: Jiachao
