@@ -21,18 +21,24 @@ GREEN = "#228833"
 RED = "#CC6677"
 GREY = "#66727A"
 LIGHT = "#F4F6F7"
+TEXT = "#263238"
 
 
 def box(ax, x, y, w, h, title, body, color):
     patch = FancyBboxPatch(
-        (x, y), w, h, boxstyle="round,pad=0.012,rounding_size=0.018",
-        linewidth=1.1, edgecolor=color, facecolor="white"
+        (x, y), w, h,
+        boxstyle="round,pad=0.012,rounding_size=0.018",
+        linewidth=1.1, edgecolor=color, facecolor="white",
     )
     ax.add_patch(patch)
-    ax.text(x + 0.04 * w, y + 0.76 * h, title, color=color, fontsize=6.8,
-            fontweight="bold", va="center")
-    ax.text(x + 0.04 * w, y + 0.52 * h, body, color="#263238", fontsize=5.5,
-            va="top", linespacing=1.35)
+    ax.text(
+        x + 0.055 * w, y + 0.73 * h, title,
+        color=color, fontsize=8.0, fontweight="bold", va="center",
+    )
+    ax.text(
+        x + 0.055 * w, y + 0.49 * h, body,
+        color=TEXT, fontsize=6.5, va="top", linespacing=1.30,
+    )
 
 
 def main() -> None:
@@ -57,60 +63,79 @@ def main() -> None:
     edges.to_csv(source / "figure1_workflow_edges.csv", index=False)
 
     mpl.rcParams.update({
-        "font.family": "sans-serif", "font.sans-serif": ["Arial", "DejaVu Sans"],
-        "svg.fonttype": "none", "pdf.fonttype": 42, "font.size": 7,
+        "font.family": "sans-serif",
+        "font.sans-serif": ["Arial", "DejaVu Sans"],
+        "svg.fonttype": "none",
+        "pdf.fonttype": 42,
+        "font.size": 7,
     })
-    fig, ax = plt.subplots(figsize=(7.2, 4.25))
+    # The two-row serpentine layout remains readable at final manuscript width.
+    fig, ax = plt.subplots(figsize=(7.2, 4.75))
     ax.set_xlim(0, 1)
     ax.set_ylim(0, 1)
     ax.axis("off")
 
-    xs = [0.015, 0.212, 0.409, 0.606, 0.803]
-    colors = [BLUE, BLUE, ORANGE, GREEN, GREEN]
-    titles = ["1  Evidence", "2  External validation", "3  Ensemble gate",
-              "4  Cross-test screen", "5  Stress tests"]
-    bodies = [
-        "IDT, LBV, species\nStudy-level metadata\n8–12 mechanisms",
-        "Leave-one-study-out\nMatch criterion/reactor\nError, bias, failures",
-        "Non-negative weights\nSeparate observables\nBeat both baselines?",
-        "Supported IDT range\nSoret 1D flames\nBounded PSR–PFR",
-        "Separate pollutants\nAlternative dispersion\nMechanism deletion",
+    stages = [
+        (0.025, 0.68, BLUE, "1  Evidence",
+         "IDT, LBV and species\nStudy-level metadata\n8–12 mechanisms"),
+        (0.36, 0.68, BLUE, "2  External validation",
+         "Leave one study out\nMatch criterion/reactor\nError, bias and failures"),
+        (0.695, 0.68, ORANGE, "3  Ensemble gate",
+         "Non-negative weights\nSeparate observables\nBeat both baselines?"),
+        (0.695, 0.43, GREEN, "4  Cross-test screen",
+         "Supported IDT range\nSoret 1D flames\nBounded PSR–PFR"),
+        (0.36, 0.43, GREEN, "5  Stress tests",
+         "Separate pollutants\nAlternative dispersion\nMechanism deletion"),
     ]
-    for x, title, body, color in zip(xs, titles, bodies, colors, strict=True):
-        box(ax, x, 0.55, 0.17, 0.29, title, body, color)
-    for i in range(4):
-        ax.add_patch(FancyArrowPatch(
-            (xs[i] + 0.172, 0.695), (xs[i + 1] - 0.003, 0.695),
-            arrowstyle="-|>", mutation_scale=10, linewidth=1.0, color=GREY
-        ))
-    gate_labels = ["QA", "held-out\nresiduals", "performance\ngate", "support +\nconvergence"]
-    for i, label in enumerate(gate_labels):
-        ax.text((xs[i] + xs[i + 1] + 0.17) / 2, 0.525, label, ha="center",
-                va="top", fontsize=5.1, color=GREY, linespacing=1.0)
+    for x, y, color, title, body in stages:
+        box(ax, x, y, 0.28, 0.17, title, body, color)
 
-    ax.text(0.025, 0.43, "Claim admission", fontsize=8, fontweight="bold", color="#263238")
+    arrows = [
+        ((0.307, 0.765), (0.357, 0.765)),
+        ((0.642, 0.765), (0.692, 0.765)),
+        ((0.835, 0.675), (0.835, 0.605)),
+        ((0.692, 0.515), (0.642, 0.515)),
+    ]
+    for start, end in arrows:
+        ax.add_patch(FancyArrowPatch(
+            start, end, arrowstyle="-|>", mutation_scale=11,
+            linewidth=1.0, color=GREY,
+        ))
+
+    ax.add_patch(FancyArrowPatch(
+        (0.50, 0.43), (0.50, 0.365), arrowstyle="-|>", mutation_scale=11,
+        linewidth=1.0, color=GREY,
+    ))
+    ax.text(0.025, 0.355, "Claim admission", fontsize=8.2,
+            fontweight="bold", color=TEXT, va="center")
+
     tiers = [
-        (0.025, GREEN, "Supported", "Exact criterion and experimental-domain overlap"),
-        (0.355, ORANGE, "Proxy-supported", "Related criterion; limitation carried into text"),
-        (0.685, RED, "Exploratory", "Outside support or not invariant to stress tests"),
+        (0.025, GREEN, "Supported",
+         "Exact criterion and\nexperimental-domain overlap"),
+        (0.355, ORANGE, "Proxy-supported",
+         "Related criterion; limitation\ncarried into text"),
+        (0.685, RED, "Exploratory",
+         "Outside support or not invariant\nto stress tests"),
     ]
     for x, color, title, body in tiers:
         ax.add_patch(FancyBboxPatch(
-            (x, 0.25), 0.29, 0.115, boxstyle="round,pad=0.01,rounding_size=0.012",
-            facecolor=LIGHT, edgecolor=color, linewidth=1.0
+            (x, 0.185), 0.29, 0.13,
+            boxstyle="round,pad=0.01,rounding_size=0.012",
+            facecolor=LIGHT, edgecolor=color, linewidth=1.0,
         ))
-        ax.text(x + 0.015, 0.325, title, fontsize=7.2, fontweight="bold", color=color)
-        ax.text(x + 0.015, 0.28, body, fontsize=5.2, color="#263238")
+        ax.text(x + 0.015, 0.265, title, fontsize=7.4,
+                fontweight="bold", color=color)
+        ax.text(x + 0.015, 0.222, body, fontsize=5.5,
+                color=TEXT, va="top", linespacing=1.20)
 
-    ax.add_patch(FancyBboxPatch(
-        (0.18, 0.075), 0.64, 0.085, boxstyle="round,pad=0.012,rounding_size=0.014",
-        facecolor="white", edgecolor=GREY, linewidth=0.9
-    ))
-    ax.text(0.5, 0.117,
-            "Manuscript claim strength is limited by the weakest validation, domain and robustness test",
-            ha="center", va="center", fontsize=6.7, color="#263238")
-    ax.text(0.018, 0.94, "Evidence gates expose when mechanism ensembles and apparent optima are not credible",
-            fontsize=9, fontweight="bold", color="#263238")
+    ax.plot([0.18, 0.82], [0.13, 0.13], color=GREY, linewidth=0.8)
+    ax.text(
+        0.5, 0.09,
+        "Claim strength is limited by the weakest validation, domain or robustness test",
+        ha="center", va="center", fontsize=7.2, color=TEXT,
+    )
+    ax.text(0.025, 0.94, "Evidence-gated workflow for claim admission",
+            fontsize=10, fontweight="bold", color=TEXT)
 
     base = exports / "figure1_workflow"
     fig.savefig(base.with_suffix(".svg"), bbox_inches="tight")
